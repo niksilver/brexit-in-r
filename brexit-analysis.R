@@ -47,3 +47,28 @@ motions[ c("id", "vote.title")]  =
           , motions$vote.name
           )
   )
+
+cross.votes.fn <- function() {
+  results = data.frame(
+    id1 = integer()
+    , vote.name1 = factor()
+    , id2 = integer()
+    , vote.name2 = factor()
+    , count = integer()
+    )
+  for (i1 in 1:nrow(motions)) {
+    vote1 = motions[i1,]
+    for (i2 in 1:nrow(motions)) {
+      vote2 = motions[i2,]
+      voters = raw.data[
+        (raw.data$division.number == vote1$division.number & raw.data$vote...type...uri == vote1$vote...type...uri)
+        | (raw.data$division.number == vote2$division.number & raw.data$vote...type...uri == vote2$vote...type...uri)
+        , "vote...member.printed"
+        ]
+      count = length(unique(voters))
+      print(paste("vote1", vote1$id, "as", vote1$vote.name, "vote2", vote2$id, "as", vote2$vote.name, "count", count))
+      row = c(vote1$id, vote1$vote.name, vote2$id, vote2$vote.name, count)
+      results = rbind(results, row)
+    }
+  }
+}
