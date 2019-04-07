@@ -16,6 +16,11 @@ for ( url in csv.urls ) {
   raw.data = rbind( raw.data, csv )
 }
 
+# It's useful to augment raw.data with extra columns:
+# - vote name which is just the string Aye or No (reduced from the URI)
+# - vote title to indicate not just the title of the motion, but also whether it's Aye or No version
+# - vote id to give an id to the vote title
+
 vote.uri.to.name <- function(uri) {
   if (uri == "http://data.parliament.uk/schema/parl#AyeVote" ) {
     return( "Aye" )
@@ -26,27 +31,46 @@ vote.uri.to.name <- function(uri) {
   }
 }
 
-motion.id.and.vote.title <- function( division.number, title, vote.name ) {
-  vote.title = paste( title, " (", vote.name, ")", sep = "" )
+v.vote.uri.to.name = Vectorize(vote.uri.to.name)
+
+raw.data$vote.name = v.vote.uri.to.name( raw.data$vote...type...uri )
+
+get.vote.id <- function( division.number, vote.name ) {
   if (vote.name == "Aye") {
-    return( c( division.number * 10 + 1, vote.title ))
+    return( division.number * 10 + 1 )
   } else if (vote.name == "No") {
-    return( c( division.number * 10 + 0, vote.title ))
+    return( division.number * 10 + 0 )
   } else {
-    return( c( division.number * 10 + 9, vote.title ))
+    return( division.number * 10 + 9 )
   }
 }
 
-motions = unique( raw.data[ c(  "division.number", "vote...type...uri", "title" )])
-motions$vote.name = lapply( motions$vote...type...uri, vote.uri.to.name)
-motions[ c("id", "vote.title")]  =
-  t(
-    mapply( motion.id.and.vote.title
-          , motions$division.number
-          , motions$title
-          , motions$vote.name
-          )
-  )
+v.get.vote.id = Vectorize(get.vote.id)
+
+raw.data$vote.id = v.get.vote.id( raw.data$division.number, raw.data$vote.name )
+
+get.vote.title <- function( title, vote.name ) {
+  vote.title = paste( title, " (", vote.name, ")", sep = "" )
+}
+
+v.get.vote.title = Vectorize(get.vote.title)
+
+raw.data$vote.title = v.get.vote.title( raw.data$title, raw.data$vote.name )
+
+# Get a data frame with just the motions and the vote for each
+
+voted.motions = unique( data.frame(
+  id = raw.data$vote.id
+  , title = raw.data$vote.title
+  , name = raw.data$vote.name
+  ))
+
+# Get combinations of all pairs of voted motions.
+# This has columns id.x, title.x, name.x, id.y, title.y, name.y
+
+cross.votes = merge(voted.motions, voted.motions, by = NULL)
+
+stop("Premature stop 3")
 
 cross.votes.fn <- function() {
   results = data.frame(
