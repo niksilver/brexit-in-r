@@ -11,10 +11,14 @@ csv.urls = paste( "http://lda.data.parliament.uk/commonsdivisions/id/", url.ids,
 
 raw.data = data.frame()
 
+print("Downloading data...")
+
 for ( url in csv.urls ) {
   csv = read.csv( url )
   raw.data = rbind( raw.data, csv )
 }
+
+print("Making calculations...")
 
 # It's useful to augment raw.data with extra columns:
 # - vote name which is just the string Aye or No (reduced from the URI)
@@ -70,29 +74,31 @@ voted.motions = unique( data.frame(
 
 cross.votes = merge(voted.motions, voted.motions, by = NULL)
 
-stop("Premature stop 3")
+# Add the count of members who voted (i) for either of the pair, and (ii) for both.
+# Then add the proportion
 
-cross.votes.fn <- function() {
-  results = data.frame(
-    id1 = integer()
-    , vote.name1 = factor()
-    , id2 = integer()
-    , vote.name2 = factor()
-    , count = integer()
-    )
-  for (i1 in 1:nrow(motions)) {
-    vote1 = motions[i1,]
-    for (i2 in 1:nrow(motions)) {
-      vote2 = motions[i2,]
-      voters = raw.data[
-        (raw.data$division.number == vote1$division.number & raw.data$vote...type...uri == vote1$vote...type...uri)
-        | (raw.data$division.number == vote2$division.number & raw.data$vote...type...uri == vote2$vote...type...uri)
-        , "vote...member.printed"
-        ]
-      count = length(unique(voters))
-      print(paste("vote1", vote1$id, "as", vote1$vote.name, "vote2", vote2$id, "as", vote2$vote.name, "count", count))
-      row = c(vote1$id, vote1$vote.name, vote2$id, vote2$vote.name, count)
-      results = rbind(results, row)
-    }
-  }
+get.count.either = function(id.x, id.y) {
+  length(unique(
+    raw.data[
+      raw.data$vote.id == id.x | raw.data$vote.id == id.y
+      , "vote...member.printed"
+    ]
+  ))
 }
+
+v.get.count.either = Vectorize(get.count.either)
+
+cross.votes$count.either = v.get.count.either( cross.votes$id.x, cross.votes$id.y )
+
+get.count.both = function(id.x, id.y) {
+  length(intersect(
+    raw.data[ raw.data$vote.id == id.x, "vote...member.printed" ]
+    , raw.data[ raw.data$vote.id == id.y, "vote...member.printed" ]
+  ))
+}
+
+v.get.count.both = Vectorize(get.count.both)
+
+cross.votes$count.both = v.get.count.both( cross.votes$id.x, cross.votes$id.y )
+
+cross.votes$affinity = cross.votes$count.both / cross.votes$count.either
