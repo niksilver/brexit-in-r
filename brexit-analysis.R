@@ -90,6 +90,11 @@ voted.motions = unique( data.frame(
   , count = raw.data$vote.count
   ))
 
+
+# Add data about each of the motions
+
+motion.themes = read.csv("motion-themes.csv")
+
 # Get combinations of all pairs of voted motions.
 # This has columns id.x, title.x, name.x, count.x ... and the same for .y
 
