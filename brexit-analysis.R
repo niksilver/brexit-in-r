@@ -91,9 +91,19 @@ voted.motions = unique( data.frame(
   ))
 
 
-# Add data about each of the motions
+# Add data about each of the motions.
+# Add it to the raw data, including any gaps (all.x = TRUE), of which there shouldn't be any
+# Stop if there are gaps
 
 motion.themes = read.csv("motion-themes.csv")
+
+raw.data = merge( raw.data, motion.themes, by = "title", all.x = TRUE )
+
+if (length(raw.data[ is.na(raw.data$short.title), ]) > 0) {
+  problem.motions = unique( raw.data[ is.na(raw.data$short.title), "title" ] )
+  stop(paste( "No theme data for this motion: '", problem.motions, "'", sep = "" ))
+}
+
 
 # Get combinations of all pairs of voted motions.
 # This has columns id.x, title.x, name.x, count.x ... and the same for .y
