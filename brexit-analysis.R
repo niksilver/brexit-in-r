@@ -99,7 +99,7 @@ motion.themes = read.csv("motion-themes.csv")
 
 raw.data = merge( raw.data, motion.themes, by = "title", all.x = TRUE )
 
-if (length(raw.data[ is.na(raw.data$short.title), ]) > 0) {
+if ( nrow( raw.data[ is.na(raw.data$short.title), ]) > 0 ) {
   problem.motions = unique( raw.data[ is.na(raw.data$short.title), "title" ] )
   stop(paste( "No theme data for this motion: '", problem.motions, "'", sep = "" ))
 }
