@@ -24,7 +24,6 @@ print("Making calculations...")
 
 # It's useful to augment raw.data with extra columns:
 # - vote name which is just the string Aye or No (reduced from the URI)
-# - vote title to indicate not just the title of the motion, but also whether it's Aye or No version
 # - vote id to give an id to the vote title
 # - count of votes in that lobby for that motion
 
@@ -56,14 +55,6 @@ v.get.vote.id = Vectorize(get.vote.id)
 
 raw.data$vote.id = v.get.vote.id( raw.data$division.number, raw.data$vote.name )
 
-get.vote.title <- function( title, vote.name ) {
-  vote.title = paste( title, " (", vote.name, ")", sep = "" )
-}
-
-v.get.vote.title = Vectorize(get.vote.title)
-
-raw.data$vote.title = v.get.vote.title( raw.data$title, raw.data$vote.name )
-
 get.vote.count = function(ayes, noes, vote.name) {
   if (vote.name == "Aye") {
     ayes
@@ -83,14 +74,31 @@ raw.data$vote.count = v.get.vote.count(
 # Add data about each of the motions.
 # Add it to the raw data, including any gaps (all.x = TRUE), of which there shouldn't be any
 # Stop if there are gaps
+# Add a vote title to indicate not just the title of the motion,
+#   but also whether it's Aye or No version.
 
 motion.themes = read.csv("motion-themes.csv")
 
-raw.data = merge( raw.data, motion.themes, by = "title", all.x = TRUE )
+raw.data = merge( raw.data, motion.themes, by = c("title", "date"), all.x = TRUE )
+
+get.vote.title <- function( title, vote.name ) {
+  vote.title = paste( title, " (", vote.name, ")", sep = "" )
+}
+
+v.get.vote.title = Vectorize(get.vote.title)
+
+raw.data$vote.title = v.get.vote.title( raw.data$short.title, raw.data$vote.name )
 
 if ( nrow( raw.data[ is.na(raw.data$short.title), ]) > 0 ) {
   problem.motions = unique( raw.data[ is.na(raw.data$short.title), "title" ] )
   stop(paste( "No theme data for this motion: '", problem.motions, "'", sep = "" ))
+}
+
+
+# Check we've got the number of motions that we expect
+
+if ( length(pretty.urls) != nrow(motion.themes) ) {
+  stop(paste( "Got", length(pretty.urls), "downloads but", nrow(motion.themes), "motions"))
 }
 
 
