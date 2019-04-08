@@ -3,8 +3,14 @@
 pretty.urls =
   c( "http://explore.data.parliament.uk/?endpoint=commonsdivisions/id/1041567"  # PM's MV 1
      , "http://explore.data.parliament.uk/?endpoint=commonsdivisions/id/1041564"  # Baron (f)
-     #, "http://explore.data.parliament.uk/?endpoint=commonsdivisions/id/1042258"  # No confidence
-     #, "http://explore.data.parliament.uk/?endpoint=commonsdivisions/id/1050712"  # Brady(n)
+     , "http://explore.data.parliament.uk/?endpoint=commonsdivisions/id/1042258"  # No confidence
+     , "http://explore.data.parliament.uk/?endpoint=commonsdivisions/id/1050712"  # Brady(n)
+     , "http://explore.data.parliament.uk/?endpoint=commonsdivisions/id/1050644"  # Spelman (i)
+     , "http://explore.data.parliament.uk/?endpoint=commonsdivisions/id/1050642"  # Reeves (j)
+     , "http://explore.data.parliament.uk/?endpoint=commonsdivisions/id/1050641"  # Cooper (b)
+     , "http://explore.data.parliament.uk/?endpoint=commonsdivisions/id/1050640"  # Grieve (g)
+     , "http://explore.data.parliament.uk/?endpoint=commonsdivisions/id/1050639"  # Blackford (o)
+     , "http://explore.data.parliament.uk/?endpoint=commonsdivisions/id/1050638"  # Corbyn (a)
   )
 url.ids = sub( ".*/", "", pretty.urls )
 csv.urls = paste( "http://lda.data.parliament.uk/commonsdivisions/id/", url.ids, ".csv", sep = "" )
@@ -15,8 +21,9 @@ raw.data = data.frame()
 
 print("Downloading data...")
 
-for ( url in csv.urls ) {
-  csv = read.csv( url )
+for ( i in 1:length(csv.urls) ) {
+  cat(sprintf( "Downloading %s/%s\n", i, length(csv.urls) ))
+  csv = read.csv( csv.urls[i] )
   raw.data = rbind( raw.data, csv )
 }
 
@@ -91,7 +98,7 @@ raw.data$vote.title = v.get.vote.title( raw.data$short.title, raw.data$vote.name
 
 if ( nrow( raw.data[ is.na(raw.data$short.title), ]) > 0 ) {
   problem.motions = unique( raw.data[ is.na(raw.data$short.title), "title" ] )
-  stop(paste( "No theme data for this motion: '", problem.motions, "'", sep = "" ))
+  stop(sprintf( "No theme data for this motion: '%s'\n", problem.motions ))
 }
 
 
@@ -161,6 +168,7 @@ filtered.votes.edges =
 votes.edges = data.frame(
   Source = filtered.votes.edges$id.x
   , Target = filtered.votes.edges$id.y
+  , Type = "Undirected"
   , Weight = filtered.votes.edges$affinity
   , CountEither = filtered.votes.edges$count.either
   , CountBoth = filtered.votes.edges$count.both
