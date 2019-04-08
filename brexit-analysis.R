@@ -80,17 +80,6 @@ raw.data$vote.count = v.get.vote.count(
     raw.data$ayes.count, raw.data$noesvotecount, raw.data$vote.name
   )
 
-
-# Get a data frame with just the motions and the vote for each
-
-voted.motions = unique( data.frame(
-  id = raw.data$vote.id
-  , title = raw.data$vote.title
-  , name = raw.data$vote.name
-  , count = raw.data$vote.count
-  ))
-
-
 # Add data about each of the motions.
 # Add it to the raw data, including any gaps (all.x = TRUE), of which there shouldn't be any
 # Stop if there are gaps
@@ -103,6 +92,16 @@ if ( nrow( raw.data[ is.na(raw.data$short.title), ]) > 0 ) {
   problem.motions = unique( raw.data[ is.na(raw.data$short.title), "title" ] )
   stop(paste( "No theme data for this motion: '", problem.motions, "'", sep = "" ))
 }
+
+
+# Get a data frame with just the motions and the vote for each
+
+voted.motions = unique( data.frame(
+  id = raw.data$vote.id
+  , title = raw.data$vote.title
+  , name = raw.data$vote.name
+  , count = raw.data$vote.count
+  ))
 
 
 # Get combinations of all pairs of voted motions.
