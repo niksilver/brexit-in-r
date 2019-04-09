@@ -1,4 +1,6 @@
-# Convert the "pretty" URLs, which presents a nice page of data, into the URLs for CSV files.
+source( "create-data-frames.R" )
+
+# Here's where the data comes from...
 
 pretty.urls =
   c( "http://explore.data.parliament.uk/?endpoint=commonsdivisions/id/1041567"  # PM's MV 1
@@ -11,103 +13,21 @@ pretty.urls =
      , "http://explore.data.parliament.uk/?endpoint=commonsdivisions/id/1050640"  # Grieve (g)
      , "http://explore.data.parliament.uk/?endpoint=commonsdivisions/id/1050639"  # Blackford (o)
      , "http://explore.data.parliament.uk/?endpoint=commonsdivisions/id/1050638"  # Corbyn (a)
-  )
-url.ids = sub( ".*/", "", pretty.urls )
-csv.urls = paste( "http://lda.data.parliament.uk/commonsdivisions/id/", url.ids, ".csv", sep = "" )
-
-# Get all the CSV files needed and bind them together
-
-raw.data = data.frame()
-
-print("Downloading data...")
-
-for ( i in 1:length(csv.urls) ) {
-  cat(sprintf( "Downloading %s/%s\n", i, length(csv.urls) ))
-  csv = read.csv( csv.urls[i] )
-  raw.data = rbind( raw.data, csv )
-}
-
-print("Making calculations...")
-
-# It's useful to augment raw.data with extra columns:
-# - vote name which is just the string Aye or No (reduced from the URI)
-# - vote id to give an id to the vote title
-# - count of votes in that lobby for that motion
-
-vote.uri.to.name <- function(uri) {
-  if (uri == "http://data.parliament.uk/schema/parl#AyeVote" ) {
-    return( "Aye" )
-  } else if (uri == "http://data.parliament.uk/schema/parl#NoVote" ) {
-    return( "No" )
-  } else {
-    stop( "Unknown vote URI" )
-  }
-}
-
-v.vote.uri.to.name = Vectorize(vote.uri.to.name)
-
-raw.data$vote.name = v.vote.uri.to.name( raw.data$vote...type...uri )
-
-get.vote.id <- function( division.number, vote.name ) {
-  if (vote.name == "Aye") {
-    return( division.number * 10 + 1 )
-  } else if (vote.name == "No") {
-    return( division.number * 10 + 0 )
-  } else {
-    stop( "Unknown vote name" )
-  }
-}
-
-v.get.vote.id = Vectorize(get.vote.id)
-
-raw.data$vote.id = v.get.vote.id( raw.data$division.number, raw.data$vote.name )
-
-get.vote.count = function(ayes, noes, vote.name) {
-  if (vote.name == "Aye") {
-    ayes
-  } else if (vote.name == "No") {
-    noes
-  } else {
-    stop("Got a vote which is neither Aye nor No")
-  }
-}
-
-v.get.vote.count = Vectorize(get.vote.count)
-
-raw.data$vote.count = v.get.vote.count(
-    raw.data$ayes.count, raw.data$noesvotecount, raw.data$vote.name
+     , "http://explore.data.parliament.uk/?endpoint=commonsdivisions/id/1061010"  # Main, 14 Feb
+     , "http://explore.data.parliament.uk/?endpoint=commonsdivisions/id/1061009"  # Blackford
+     , "http://explore.data.parliament.uk/?endpoint=commonsdivisions/id/1061008"  # Corbyn
+     , "http://explore.data.parliament.uk/?endpoint=commonsdivisions/id/1078392"  # Cooper, 27 Feb
+     , "http://explore.data.parliament.uk/?endpoint=commonsdivisions/id/1078391"  # Blackford, 27 Feb
+     , "http://explore.data.parliament.uk/?endpoint=commonsdivisions/id/1078390"  # Corbyn, 27 Feb
+     , "http://explore.data.parliament.uk/?endpoint=commonsdivisions/id/1086876"  # MV 2
+     , "http://explore.data.parliament.uk/?endpoint=commonsdivisions/id/1087778"  # No no deal amdd
+     , "http://explore.data.parliament.uk/?endpoint=commonsdivisions/id/1087777"  # Spelman (no deal ever)
+     , "http://explore.data.parliament.uk/?endpoint=commonsdivisions/id/1087775"  # Malthouse (no deal)
   )
 
-# Add data about each of the motions.
-# Add it to the raw data, including any gaps (all.x = TRUE), of which there shouldn't be any
-# Stop if there are gaps
-# Add a vote title to indicate not just the title of the motion,
-#   but also whether it's Aye or No version.
+# Create raw data
 
-motion.themes = read.csv("motion-themes.csv")
-
-raw.data = merge( raw.data, motion.themes, by = c("title", "date"), all.x = TRUE )
-
-get.vote.title <- function( title, vote.name ) {
-  vote.title = paste( title, " (", vote.name, ")", sep = "" )
-}
-
-v.get.vote.title = Vectorize(get.vote.title)
-
-raw.data$vote.title = v.get.vote.title( raw.data$short.title, raw.data$vote.name )
-
-if ( nrow( raw.data[ is.na(raw.data$short.title), ]) > 0 ) {
-  problem.motions = unique( raw.data[ is.na(raw.data$short.title), "title" ] )
-  stop(sprintf( "No theme data for this motion: '%s'\n", problem.motions ))
-}
-
-
-# Check we've got the number of motions that we expect
-
-if ( length(pretty.urls) != nrow(motion.themes) ) {
-  stop(paste( "Got", length(pretty.urls), "downloads but", nrow(motion.themes), "motions"))
-}
-
+raw.data = create.raw.data( pretty.urls )
 
 # Get a data frame with just the motions and the vote for each
 

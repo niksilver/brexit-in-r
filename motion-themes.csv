@@ -1,11 +1,21 @@
-title,date,short.title,meaningful.vote,indicative
-European Union (Withdrawal) Act main Motion (Prime Minister),2019-01-15,MV 1,TRUE,FALSE
-European Union (Withdrawal) Act Amdt (f) - Baron,2019-01-15,"MV 1, Baron (f)",FALSE,FALSE
-No confidence in Her Majesty's Government,2019-01-16,No conf,FALSE,FALSE
-EU (Withdrawal) Act Section 13 Amdt (n) - Brady,2019-01-29,"29 Jan, Brady (n)",FALSE,FALSE
-EU (Withdrawal) Act Section 13 Amdt (i) - Spelman,2019-01-29,"29 Jan, Spelman (i)",FALSE,FALSE
-EU (Withdrawal) Act Section 13 Amdt (j) - Reeves,2019-01-29,"29 Jan, Reeves (j)",FALSE,FALSE
-EU (Withdrawal) Act Section 13 Amdt (b) - Cooper,2019-01-29,"29 Jan, Cooper (b)",FALSE,FALSE
-EU (Withdrawal) Act Section 13 Amdt (g) - Grieve,2019-01-29,"29 Jan, Grieve (g)",FALSE,FALSE
- EU (Withdrawal) Act Section 13 Amdt (o) - Blackford,2019-01-29,"29 Jan, Blackford (o)",FALSE,FALSE
-EU (Withdrawal) Act Section 13 Amdt (a) - Corbyn,2019-01-29,"29 Jan, Corbyn (a)",FALSE,FALSE
+title,date,short.title,meaningful.vote,pms,indicative
+European Union (Withdrawal) Act main Motion (Prime Minister),2019-01-15,MV 1,TRUE,TRUE,FALSE
+European Union (Withdrawal) Act Amdt (f) - Baron,2019-01-15,"MV 1, Baron (f)",FALSE,FALSE,FALSE
+No confidence in Her Majesty's Government,2019-01-16,No conf,FALSE,FALSE,FALSE
+EU (Withdrawal) Act Section 13 Amdt (n) - Brady,2019-01-29,"29 Jan, Brady (n)",FALSE,FALSE,FALSE
+EU (Withdrawal) Act Section 13 Amdt (i) - Spelman,2019-01-29,"29 Jan, Spelman (i)",FALSE,FALSE,FALSE
+EU (Withdrawal) Act Section 13 Amdt (j) - Reeves,2019-01-29,"29 Jan, Reeves (j)",FALSE,FALSE,FALSE
+EU (Withdrawal) Act Section 13 Amdt (b) - Cooper,2019-01-29,"29 Jan, Cooper (b)",FALSE,FALSE,FALSE
+EU (Withdrawal) Act Section 13 Amdt (g) - Grieve,2019-01-29,"29 Jan, Grieve (g)",FALSE,FALSE,FALSE
+ EU (Withdrawal) Act Section 13 Amdt (o) - Blackford,2019-01-29,"29 Jan, Blackford (o)",FALSE,FALSE,FALSE
+EU (Withdrawal) Act Section 13 Amdt (a) - Corbyn,2019-01-29,"29 Jan, Corbyn (a)",FALSE,FALSE,FALSE
+UK's withdrawal from the EU: main motion,2019-02-14,"14 Feb, Ack",FALSE,TRUE,FALSE
+UK's withdrawal from the EU: Mr Blackford's amendment,2019-02-14,"14 Feb, Blackford",FALSE,FALSE,FALSE
+UK's withdrawal from the EU: Mr Corbyn's amendment (a),2019-02-14,"14 Feb, Corbyn",FALSE,FALSE,FALSE
+UK's withdrawal from the EU: Yvette Cooper's amendment (f),2019-02-27,"27 Feb, Cooper",FALSE,FALSE,FALSE
+UK's withdrawal from the EU: Mr Blackford's amendment (k),2019-02-27,"27 Feb, Blackford",FALSE,FALSE,FALSE
+UK's withdrawal from the EU: Mr Corbyn's amendment (a),2019-02-27,"27 Feb, Corbyn",FALSE,FALSE,FALSE
+Section 13(1)(b) of the European Union (Withdrawal) Act main motion,2019-03-12,MV 2,TRUE,TRUE,FALSE
+"Main motion, as amended by amendment (a), on UK's withdrawal from the European Union",2019-03-13,"No no deal, amdd",FALSE,TRUE,FALSE
+Amendment (a) to the motion on the UK's withdrawal from the European Union,2019-03-13,Spelman (no no deal),FALSE,FALSE,FALSE
+Amendment (f) to the motion on the UK's withdrawal from the European Union,2019-03-13,Malthouse (no deal),FALSE,FALSE,FALSE
