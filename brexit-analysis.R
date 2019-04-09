@@ -28,6 +28,9 @@ pretty.urls =
      , "http://explore.data.parliament.uk/?endpoint=commonsdivisions/id/1088674"  # Ext A50, Benn
      , "http://explore.data.parliament.uk/?endpoint=commonsdivisions/id/1088673"  # Ext A50, Powell-Benn
      , "http://explore.data.parliament.uk/?endpoint=commonsdivisions/id/1088670"  # Ext A50, Wollaston
+     , "http://explore.data.parliament.uk/?endpoint=commonsdivisions/id/1104689"  # Stmt, amdd
+     , "http://explore.data.parliament.uk/?endpoint=commonsdivisions/id/1104688"  # Stmt, Beckett
+     , "http://explore.data.parliament.uk/?endpoint=commonsdivisions/id/1104623"  # Stmt, Letwin
   )
 
 # Create raw data
