@@ -5,21 +5,29 @@ create.raw.data = function( pretty.urls ) {
   # Convert the "pretty" URLs, which presents a nice page of data, into the URLs for CSV files.
   
   url.ids = sub( ".*/", "", pretty.urls )
-  csv.urls = paste( "http://lda.data.parliament.uk/commonsdivisions/id/", url.ids, ".csv", sep = "" )
-  
+
   # Get all the CSV files needed and bind them together
   
   raw.data = data.frame()
   
-  print("Downloading data...")
+  cat("Fetching data...\n")
   
-  for ( i in 1:length(csv.urls) ) {
-    cat(sprintf( "Downloading %s/%s\n", i, length(csv.urls) ))
-    csv = read.csv( csv.urls[i] )
+  for ( i in 1:length(url.ids) ) {
+    cat(sprintf( "Fetching %s/%s...", i, length(url.ids) ))
+    cached.file.name = paste( "cache/", url.ids[i], ".csv" , sep = "" )
+    csv.url = paste( "http://lda.data.parliament.uk/commonsdivisions/id/", url.ids[i], ".csv", sep = "" )
+    if (file.exists( cached.file.name )) {
+      csv = read.csv( cached.file.name )
+      cat(" Fetched from cache\n")
+    } else {
+      csv = read.csv( csv.url )
+      write.csv( csv, cached.file.name, row.names = FALSE )
+      cat(sprintf(" Fetched from web and cached as %s\n", cached.file.name ))
+    }
     raw.data = rbind( raw.data, csv )
   }
   
-  print("Making calculations...")
+  cat("Making calculations...\n")
   
   # It's useful to augment raw.data with extra columns:
   # - vote name which is just the string Aye or No (reduced from the URI)

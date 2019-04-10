@@ -102,7 +102,7 @@ votes.edges = data.frame(
   , CountBoth = filtered.votes.edges$count.both
 )
 
-print("Writing files...")
+cat("Writing files...\n")
 
 write.csv(votes.nodes, file = "votes-nodes.csv", row.names = FALSE)
 write.csv(votes.edges, file = "votes-edges.csv", row.names = FALSE)
