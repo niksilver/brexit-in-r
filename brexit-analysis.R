@@ -31,6 +31,16 @@ pretty.urls =
      , "http://explore.data.parliament.uk/?endpoint=commonsdivisions/id/1104689"  # Stmt, amdd
      , "http://explore.data.parliament.uk/?endpoint=commonsdivisions/id/1104688"  # Stmt, Beckett
      , "http://explore.data.parliament.uk/?endpoint=commonsdivisions/id/1104623"  # Stmt, Letwin
+     , "http://explore.data.parliament.uk/?endpoint=commonsdivisions/id/1105759"  # ???
+     , "http://explore.data.parliament.uk/?endpoint=commonsdivisions/id/1105403"  # Ind
+     , "http://explore.data.parliament.uk/?endpoint=commonsdivisions/id/1105533"  # Ind, Cont pref arr
+     , "http://explore.data.parliament.uk/?endpoint=commonsdivisions/id/1105532"  # Ind, Conf pub vote
+     , "http://explore.data.parliament.uk/?endpoint=commonsdivisions/id/1105530"  # Ind, Revoke if ND
+     , "http://explore.data.parliament.uk/?endpoint=commonsdivisions/id/1105529"  # Ind, Labour alt
+     , "http://explore.data.parliament.uk/?endpoint=commonsdivisions/id/1105527"  # Ind, Customs U
+     , "http://explore.data.parliament.uk/?endpoint=commonsdivisions/id/1105526"  # Ind, EFTA and EEA
+     , "http://explore.data.parliament.uk/?endpoint=commonsdivisions/id/1105524"  # Ind, C Mkt 2.0
+     , "http://explore.data.parliament.uk/?endpoint=commonsdivisions/id/1105521"  # Ind, ND
   )
 
 # Create raw data

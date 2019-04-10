@@ -5,6 +5,10 @@
 3570,"No ND, Spelman (No)","No",309
 3581,"No ND, Malthouse (Aye)","Aye",164
 3580,"No ND, Malthouse (No)","No",374
+3851,"Ind (Aye)","Aye",331
+3850,"Ind (No)","No",287
+3941,"??? (Aye)","Aye",440
+3940,"??? (No)","No",105
 3071,"29 Jan, Corbyn (a) (Aye)","Aye",296
 3070,"29 Jan, Corbyn (a) (No)","No",327
 3101,"29 Jan, Cooper (b) (Aye)","Aye",298
@@ -27,8 +31,24 @@
 3740,"Stmt, Beckett (No)","No",315
 3751,"Stmt, amdd (Aye)","Aye",327
 3750,"Stmt, amdd (No)","No",300
+3881,"Ind, EFTA and EEA (Aye)","Aye",64
+3880,"Ind, EFTA and EEA (No)","No",377
+3901,"Ind, Labour alt (Aye)","Aye",237
+3900,"Ind, Labour alt (No)","No",307
+3911,"Ind, Revoke if ND (Aye)","Aye",184
+3910,"Ind, Revoke if ND (No)","No",293
 3591,"No ND, amdd (Aye)","Aye",321
 3590,"No ND, amdd (No)","No",278
+3921,"Ind, Conf pub vote (Aye)","Aye",268
+3920,"Ind, Conf pub vote (No)","No",295
+3861,"Ind, ND (Aye)","Aye",160
+3860,"Ind, ND (No)","No",400
+3891,"Ind, Customs U (Aye)","Aye",265
+3890,"Ind, Customs U (No)","No",271
+3931,"Ind, Cont pref arr (Aye)","Aye",139
+3930,"Ind, Cont pref arr (No)","No",422
+3871,"Ind, C Mkt 2.0 (Aye)","Aye",189
+3870,"Ind, C Mkt 2.0 (No)","No",283
 2961,"No conf (Aye)","Aye",306
 2960,"No conf (No)","No",325
 3541,"MV 2 (Aye)","Aye",242
