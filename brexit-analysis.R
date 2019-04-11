@@ -128,4 +128,15 @@ votes.edges = data.frame(
   , CountBoth = filtered.votes.edges$count.both
 )
 
+# Write everything
+
 write.graph.files(votes.nodes, votes.edges)
+
+# Write just the meaningful votes
+
+write.graph.files(
+  votes.nodes
+  , votes.edges
+  , nodes.filter = function(nodes) { nodes$MeaningfulVote == TRUE }
+  , suffix = "-meaningful"
+  )
