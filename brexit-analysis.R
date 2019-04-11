@@ -1,4 +1,5 @@
 source( "create-data-frames.R" )
+source( "write-graph-files.R" )
 
 # Here's where the data comes from...
 
@@ -31,7 +32,7 @@ pretty.urls =
      , "http://explore.data.parliament.uk/?endpoint=commonsdivisions/id/1104689"  # Stmt, amdd
      , "http://explore.data.parliament.uk/?endpoint=commonsdivisions/id/1104688"  # Stmt, Beckett
      , "http://explore.data.parliament.uk/?endpoint=commonsdivisions/id/1104623"  # Stmt, Letwin
-     , "http://explore.data.parliament.uk/?endpoint=commonsdivisions/id/1105759"  # ???
+     , "http://explore.data.parliament.uk/?endpoint=commonsdivisions/id/1105759"  # Ext to 12 April
      , "http://explore.data.parliament.uk/?endpoint=commonsdivisions/id/1105403"  # Ind
      , "http://explore.data.parliament.uk/?endpoint=commonsdivisions/id/1105533"  # Ind, Cont pref arr
      , "http://explore.data.parliament.uk/?endpoint=commonsdivisions/id/1105532"  # Ind, Conf pub vote
@@ -41,6 +42,18 @@ pretty.urls =
      , "http://explore.data.parliament.uk/?endpoint=commonsdivisions/id/1105526"  # Ind, EFTA and EEA
      , "http://explore.data.parliament.uk/?endpoint=commonsdivisions/id/1105524"  # Ind, C Mkt 2.0
      , "http://explore.data.parliament.uk/?endpoint=commonsdivisions/id/1105521"  # Ind, ND
+     , "http://explore.data.parliament.uk/?endpoint=commonsdivisions/id/1107737"  # MV 2.5
+     , "http://explore.data.parliament.uk/?endpoint=commonsdivisions/id/1108907"  # Ind 2, Parl decides
+     , "http://explore.data.parliament.uk/?endpoint=commonsdivisions/id/1108906"  # Ind 2, Conf pub vote
+     , "http://explore.data.parliament.uk/?endpoint=commonsdivisions/id/1108905"  # Ind 2, Customs U
+     , "http://explore.data.parliament.uk/?endpoint=commonsdivisions/id/1108904"  # Ind 2, C Mkt 2.0
+     , "http://explore.data.parliament.uk/?endpoint=commonsdivisions/id/1108643"  # Ind 2
+     , "http://explore.data.parliament.uk/?endpoint=commonsdivisions/id/1109326"  # Cooper (B of H)
+     , "http://explore.data.parliament.uk/?endpoint=commonsdivisions/id/1109325"  # Cooper, Benn amdt
+     , "http://explore.data.parliament.uk/?endpoint=commonsdivisions/id/1109591"  # Cooper main
+     , "http://explore.data.parliament.uk/?endpoint=commonsdivisions/id/1109553"  # Cooper, Eustice
+     , "http://explore.data.parliament.uk/?endpoint=commonsdivisions/id/1109554"  # Cooper, Gvt
+     , "http://explore.data.parliament.uk/?endpoint=commonsdivisions/id/1109556"  # Cooper, amdt 1
   )
 
 # Create raw data
@@ -54,6 +67,7 @@ voted.motions = unique( data.frame(
   , title = raw.data$vote.title
   , name = raw.data$vote.name
   , count = raw.data$vote.count
+  , meaningful.vote = raw.data$meaningful.vote
   ))
 
 
@@ -91,6 +105,7 @@ cross.votes$count.both = v.get.count.both( cross.votes$id.x, cross.votes$id.y )
 
 cross.votes$affinity = cross.votes$count.both / cross.votes$count.either
 
+
 # Output the nodes and edges for Gephi
 
 votes.nodes = data.frame(
@@ -98,6 +113,7 @@ votes.nodes = data.frame(
   , Label = voted.motions$title
   , VoteName = voted.motions$name
   , Count = voted.motions$count
+  , MeaningfulVote = voted.motions$meaningful.vote
 )
 
 filtered.votes.edges =
@@ -112,7 +128,4 @@ votes.edges = data.frame(
   , CountBoth = filtered.votes.edges$count.both
 )
 
-cat("Writing files...\n")
-
-write.csv(votes.nodes, file = "votes-nodes.csv", row.names = FALSE)
-write.csv(votes.edges, file = "votes-edges.csv", row.names = FALSE)
+write.graph.files(votes.nodes, votes.edges)

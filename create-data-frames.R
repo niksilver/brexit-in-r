@@ -26,6 +26,9 @@ create.raw.data = function( pretty.urls ) {
     }
     raw.data = rbind( raw.data, csv )
   }
+
+  trim <- function (x) gsub("^\\s+|\\s+$", "", x)
+  raw.data$title <- trim( raw.data$title )
   
   cat("Making calculations...\n")
   

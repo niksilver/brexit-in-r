@@ -1,77 +1,101 @@
-"Id","Label","VoteName","Count"
-3081,"29 Jan, Blackford (o) (Aye)","Aye",39
-3080,"29 Jan, Blackford (o) (No)","No",327
-3571,"No ND, Spelman (Aye)","Aye",312
-3570,"No ND, Spelman (No)","No",309
-3581,"No ND, Malthouse (Aye)","Aye",164
-3580,"No ND, Malthouse (No)","No",374
-3851,"Ind (Aye)","Aye",331
-3850,"Ind (No)","No",287
-3941,"??? (Aye)","Aye",440
-3940,"??? (No)","No",105
-3071,"29 Jan, Corbyn (a) (Aye)","Aye",296
-3070,"29 Jan, Corbyn (a) (No)","No",327
-3101,"29 Jan, Cooper (b) (Aye)","Aye",298
-3100,"29 Jan, Cooper (b) (No)","No",321
-3091,"29 Jan, Grieve (g) (Aye)","Aye",301
-3090,"29 Jan, Grieve (g) (No)","No",321
-3121,"29 Jan, Spelman (i) (Aye)","Aye",318
-3120,"29 Jan, Spelman (i) (No)","No",310
-3111,"29 Jan, Reeves (j) (Aye)","Aye",290
-3110,"29 Jan, Reeves (j) (No)","No",322
-3131,"29 Jan, Brady (n) (Aye)","Aye",317
-3130,"29 Jan, Brady (n) (No)","No",301
-2921,"MV 1, Baron (f) (Aye)","Aye",24
-2920,"MV 1, Baron (f) (No)","No",600
-2931,"MV 1 (Aye)","Aye",202
-2930,"MV 1 (No)","No",432
-3731,"Stmt, Letwin (Aye)","Aye",329
-3730,"Stmt, Letwin (No)","No",302
-3741,"Stmt, Beckett (Aye)","Aye",311
-3740,"Stmt, Beckett (No)","No",315
-3751,"Stmt, amdd (Aye)","Aye",327
-3750,"Stmt, amdd (No)","No",300
-3881,"Ind, EFTA and EEA (Aye)","Aye",64
-3880,"Ind, EFTA and EEA (No)","No",377
-3901,"Ind, Labour alt (Aye)","Aye",237
-3900,"Ind, Labour alt (No)","No",307
-3911,"Ind, Revoke if ND (Aye)","Aye",184
-3910,"Ind, Revoke if ND (No)","No",293
-3591,"No ND, amdd (Aye)","Aye",321
-3590,"No ND, amdd (No)","No",278
-3921,"Ind, Conf pub vote (Aye)","Aye",268
-3920,"Ind, Conf pub vote (No)","No",295
-3861,"Ind, ND (Aye)","Aye",160
-3860,"Ind, ND (No)","No",400
-3891,"Ind, Customs U (Aye)","Aye",265
-3890,"Ind, Customs U (No)","No",271
-3931,"Ind, Cont pref arr (Aye)","Aye",139
-3930,"Ind, Cont pref arr (No)","No",422
-3871,"Ind, C Mkt 2.0 (Aye)","Aye",189
-3870,"Ind, C Mkt 2.0 (No)","No",283
-2961,"No conf (Aye)","Aye",306
-2960,"No conf (No)","No",325
-3541,"MV 2 (Aye)","Aye",242
-3540,"MV 2 (No)","No",391
-3331,"14 Feb, Ack (Aye)","Aye",259
-3330,"14 Feb, Ack (No)","No",303
-3461,"27 Feb, Blackford (Aye)","Aye",288
-3460,"27 Feb, Blackford (No)","No",324
-3321,"14 Feb, Blackford (Aye)","Aye",93
-3320,"14 Feb, Blackford (No)","No",315
-3311,"14 Feb, Corbyn (Aye)","Aye",306
-3310,"14 Feb, Corbyn (No)","No",322
-3451,"27 Feb, Corbyn (Aye)","Aye",240
-3450,"27 Feb, Corbyn (No)","No",323
-3631,"Ext A50, Corbyn (Aye)","Aye",302
-3630,"Ext A50, Corbyn (No)","No",318
-3641,"Ext A50, 14 Mar (Aye)","Aye",413
-3640,"Ext A50, 14 Mar (No)","No",202
-3471,"27 Feb, Cooper (Aye)","Aye",502
-3470,"27 Feb, Cooper (No)","No",20
-3621,"Ext A50, Benn (Aye)","Aye",312
-3620,"Ext A50, Benn (No)","No",314
-3611,"Ext A50, Powell-Benn (Aye)","Aye",311
-3610,"Ext A50, Powell-Benn (No)","No",314
-3601,"Ext A50, Wollaston (Aye)","Aye",85
-3600,"Ext A50, Wollaston (No)","No",334
+"Id","Label","VoteName","Count","MeaningfulVote"
+4021,"Cooper, Benn amdt (Aye)","Aye",310,FALSE
+4020,"Cooper, Benn amdt (No)","No",310,FALSE
+3571,"No ND, Spelman (Aye)","Aye",312,FALSE
+3570,"No ND, Spelman (No)","No",309,FALSE
+3581,"No ND, Malthouse (Aye)","Aye",164,FALSE
+3580,"No ND, Malthouse (No)","No",374,FALSE
+3851,"Ind 1 (Aye)","Aye",331,FALSE
+3850,"Ind 1 (No)","No",287,FALSE
+3961,"Ind 2 (Aye)","Aye",322,FALSE
+3960,"Ind 2 (No)","No",277,FALSE
+4031,"Cooper (B of H) (Aye)","Aye",312,FALSE
+4030,"Cooper (B of H) (No)","No",311,FALSE
+3941,"Ext to 12 April (Aye)","Aye",440,FALSE
+3940,"Ext to 12 April (No)","No",105,FALSE
+3071,"29 Jan, Corbyn (a) (Aye)","Aye",296,FALSE
+3070,"29 Jan, Corbyn (a) (No)","No",327,FALSE
+3101,"29 Jan, Cooper (b) (Aye)","Aye",298,FALSE
+3100,"29 Jan, Cooper (b) (No)","No",321,FALSE
+3091,"29 Jan, Grieve (g) (Aye)","Aye",301,FALSE
+3090,"29 Jan, Grieve (g) (No)","No",321,FALSE
+3121,"29 Jan, Spelman (i) (Aye)","Aye",318,FALSE
+3120,"29 Jan, Spelman (i) (No)","No",310,FALSE
+3111,"29 Jan, Reeves (j) (Aye)","Aye",290,FALSE
+3110,"29 Jan, Reeves (j) (No)","No",322,FALSE
+3131,"29 Jan, Brady (n) (Aye)","Aye",317,FALSE
+3130,"29 Jan, Brady (n) (No)","No",301,FALSE
+3081,"29 Jan, Blackford (o) (Aye)","Aye",39,FALSE
+3080,"29 Jan, Blackford (o) (No)","No",327,FALSE
+4071,"Cooper, amdt 1 (Aye)","Aye",123,FALSE
+4070,"Cooper, amdt 1 (No)","No",488,FALSE
+4051,"Cooper, Eustice (Aye)","Aye",304,FALSE
+4050,"Cooper, Eustice (No)","No",313,FALSE
+4061,"Cooper, Gvt (Aye)","Aye",219,FALSE
+4060,"Cooper, Gvt (No)","No",400,FALSE
+4091,"Cooper main (Aye)","Aye",313,FALSE
+4090,"Cooper main (No)","No",312,FALSE
+2921,"MV 1, Baron (f) (Aye)","Aye",24,FALSE
+2920,"MV 1, Baron (f) (No)","No",600,FALSE
+2931,"MV 1 (Aye)","Aye",202,TRUE
+2930,"MV 1 (No)","No",432,TRUE
+3731,"Stmt, Letwin (Aye)","Aye",329,FALSE
+3730,"Stmt, Letwin (No)","No",302,FALSE
+3741,"Stmt, Beckett (Aye)","Aye",311,FALSE
+3740,"Stmt, Beckett (No)","No",315,FALSE
+3751,"Stmt, amdd (Aye)","Aye",327,FALSE
+3750,"Stmt, amdd (No)","No",300,FALSE
+3881,"Ind 1, EFTA and EEA (Aye)","Aye",64,FALSE
+3880,"Ind 1, EFTA and EEA (No)","No",377,FALSE
+3901,"Ind 1, Labour alt (Aye)","Aye",237,FALSE
+3900,"Ind 1, Labour alt (No)","No",307,FALSE
+4001,"Ind 2, Parl. decide (Aye)","Aye",191,FALSE
+4000,"Ind 2, Parl. decide (No)","No",292,FALSE
+3911,"Ind 1, Revoke if ND (Aye)","Aye",184,FALSE
+3910,"Ind 1, Revoke if ND (No)","No",293,FALSE
+3591,"No ND, amdd (Aye)","Aye",321,FALSE
+3590,"No ND, amdd (No)","No",278,FALSE
+3921,"Ind 1, Conf pub vote (Aye)","Aye",268,FALSE
+3920,"Ind 1, Conf pub vote (No)","No",295,FALSE
+3861,"Ind 1, ND (Aye)","Aye",160,FALSE
+3860,"Ind 1, ND (No)","No",400,FALSE
+3971,"Ind 2, Customs U (Aye)","Aye",273,FALSE
+3970,"Ind 2, Customs U (No)","No",276,FALSE
+3891,"Ind 1, Customs U (Aye)","Aye",265,FALSE
+3890,"Ind 1, Customs U (No)","No",271,FALSE
+3931,"Ind 1, Cont pref arr (Aye)","Aye",139,FALSE
+3930,"Ind 1, Cont pref arr (No)","No",422,FALSE
+3871,"Ind 1, C Mkt 2.0 (Aye)","Aye",189,FALSE
+3870,"Ind 1, C Mkt 2.0 (No)","No",283,FALSE
+3981,"Ind 2, C Mkt 2.0 (Aye)","Aye",261,FALSE
+3980,"Ind 2, C Mkt 2.0 (No)","No",282,FALSE
+2961,"No conf (Aye)","Aye",306,FALSE
+2960,"No conf (No)","No",325,FALSE
+3991,"Ind 2, Conf pub vote (Aye)","Aye",280,FALSE
+3990,"Ind 2, Conf pub vote (No)","No",292,FALSE
+3541,"MV 2 (Aye)","Aye",242,TRUE
+3540,"MV 2 (No)","No",391,TRUE
+3331,"14 Feb, Ack (Aye)","Aye",259,FALSE
+3330,"14 Feb, Ack (No)","No",303,FALSE
+3461,"27 Feb, Blackford (Aye)","Aye",288,FALSE
+3460,"27 Feb, Blackford (No)","No",324,FALSE
+3321,"14 Feb, Blackford (Aye)","Aye",93,FALSE
+3320,"14 Feb, Blackford (No)","No",315,FALSE
+3311,"14 Feb, Corbyn (Aye)","Aye",306,FALSE
+3310,"14 Feb, Corbyn (No)","No",322,FALSE
+3451,"27 Feb, Corbyn (Aye)","Aye",240,FALSE
+3450,"27 Feb, Corbyn (No)","No",323,FALSE
+3631,"Ext A50, Corbyn (Aye)","Aye",302,FALSE
+3630,"Ext A50, Corbyn (No)","No",318,FALSE
+3641,"Ext A50, 14 Mar (Aye)","Aye",413,FALSE
+3640,"Ext A50, 14 Mar (No)","No",202,FALSE
+3471,"27 Feb, Cooper (Aye)","Aye",502,FALSE
+3470,"27 Feb, Cooper (No)","No",20,FALSE
+3621,"Ext A50, Benn (Aye)","Aye",312,FALSE
+3620,"Ext A50, Benn (No)","No",314,FALSE
+3611,"Ext A50, Powell-Benn (Aye)","Aye",311,FALSE
+3610,"Ext A50, Powell-Benn (No)","No",314,FALSE
+3601,"Ext A50, Wollaston (Aye)","Aye",85,FALSE
+3600,"Ext A50, Wollaston (No)","No",334,FALSE
+3951,"MV 2.5 (Aye)","Aye",286,TRUE
+3950,"MV 2.5 (No)","No",344,TRUE
