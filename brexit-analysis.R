@@ -116,13 +116,16 @@ votes.nodes = data.frame(
   , MeaningfulVote = voted.motions$meaningful.vote
 )
 
+# Divisions are numbered in the sequence in which they actually occurred, so
+# we can express an "earlier" and "later" sequence between id.x and id.y
+
 filtered.votes.edges =
   cross.votes[ cross.votes$id.x < cross.votes$id.y & cross.votes$count.both > 0, ]
 
 votes.edges = data.frame(
   Source = filtered.votes.edges$id.x
   , Target = filtered.votes.edges$id.y
-  , Type = "Undirected"
+  , Type = "Directed"
   , Weight = filtered.votes.edges$affinity
   , CountEither = filtered.votes.edges$count.either
   , CountBoth = filtered.votes.edges$count.both
