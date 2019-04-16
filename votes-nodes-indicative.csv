@@ -1,0 +1,29 @@
+"Id","Label","VoteName","Count","MeaningfulVote","Indicative"
+3851,"Ind 1 (Aye)","Aye",331,FALSE,TRUE
+3850,"Ind 1 (No)","No",287,FALSE,TRUE
+3961,"Ind 2 (Aye)","Aye",322,FALSE,TRUE
+3960,"Ind 2 (No)","No",277,FALSE,TRUE
+3881,"Ind 1, EFTA and EEA (Aye)","Aye",64,FALSE,TRUE
+3880,"Ind 1, EFTA and EEA (No)","No",377,FALSE,TRUE
+3901,"Ind 1, Labour alt (Aye)","Aye",237,FALSE,TRUE
+3900,"Ind 1, Labour alt (No)","No",307,FALSE,TRUE
+4001,"Ind 2, Parl. decide (Aye)","Aye",191,FALSE,TRUE
+4000,"Ind 2, Parl. decide (No)","No",292,FALSE,TRUE
+3911,"Ind 1, Revoke if ND (Aye)","Aye",184,FALSE,TRUE
+3910,"Ind 1, Revoke if ND (No)","No",293,FALSE,TRUE
+3921,"Ind 1, Conf pub vote (Aye)","Aye",268,FALSE,TRUE
+3920,"Ind 1, Conf pub vote (No)","No",295,FALSE,TRUE
+3861,"Ind 1, ND (Aye)","Aye",160,FALSE,TRUE
+3860,"Ind 1, ND (No)","No",400,FALSE,TRUE
+3971,"Ind 2, Customs U (Aye)","Aye",273,FALSE,TRUE
+3970,"Ind 2, Customs U (No)","No",276,FALSE,TRUE
+3891,"Ind 1, Customs U (Aye)","Aye",265,FALSE,TRUE
+3890,"Ind 1, Customs U (No)","No",271,FALSE,TRUE
+3931,"Ind 1, Cont pref arr (Aye)","Aye",139,FALSE,TRUE
+3930,"Ind 1, Cont pref arr (No)","No",422,FALSE,TRUE
+3871,"Ind 1, C Mkt 2.0 (Aye)","Aye",189,FALSE,TRUE
+3870,"Ind 1, C Mkt 2.0 (No)","No",283,FALSE,TRUE
+3981,"Ind 2, C Mkt 2.0 (Aye)","Aye",261,FALSE,TRUE
+3980,"Ind 2, C Mkt 2.0 (No)","No",282,FALSE,TRUE
+3991,"Ind 2, Conf pub vote (Aye)","Aye",280,FALSE,TRUE
+3990,"Ind 2, Conf pub vote (No)","No",292,FALSE,TRUE

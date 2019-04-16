@@ -68,6 +68,7 @@ voted.motions = unique( data.frame(
   , name = raw.data$vote.name
   , count = raw.data$vote.count
   , meaningful.vote = raw.data$meaningful.vote
+  , indicative = raw.data$indicative
   ))
 
 
@@ -114,6 +115,7 @@ votes.nodes = data.frame(
   , VoteName = voted.motions$name
   , Count = voted.motions$count
   , MeaningfulVote = voted.motions$meaningful.vote
+  , Indicative = voted.motions$indicative
 )
 
 # Divisions are numbered in the sequence in which they actually occurred, so
@@ -125,7 +127,7 @@ filtered.votes.edges =
 votes.edges = data.frame(
   Source = filtered.votes.edges$id.x
   , Target = filtered.votes.edges$id.y
-  , Type = "Directed"
+  , Type = v.directedness(filtered.votes.edges$id.x, filtered.votes.edges$id.y, voted.motions)
   , Weight = filtered.votes.edges$affinity
   , CountEither = filtered.votes.edges$count.either
   , CountBoth = filtered.votes.edges$count.both
@@ -142,4 +144,13 @@ write.graph.files(
   , votes.edges
   , nodes.filter = function(nodes) { nodes$MeaningfulVote == TRUE }
   , suffix = "-meaningful"
-  )
+)
+
+# Write just the indicative votes
+
+write.graph.files(
+  votes.nodes
+  , votes.edges
+  , nodes.filter = function(nodes) { nodes$Indicative == TRUE }
+  , suffix = "-indicative"
+)
