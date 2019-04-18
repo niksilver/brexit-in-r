@@ -6,16 +6,16 @@ write.graph.files <- function (
     votes.nodes
     , votes.edges
     , nodes.filter = function(votes.nodes) { TRUE }
-    , suffix = ""
+    , suffix = "all-"
     ) {
   
   filtered.votes.nodes = votes.nodes[ nodes.filter(votes.nodes), ]
-  nodes.file.name = paste("votes-nodes", suffix, ".csv", sep = "")
+  nodes.file.name = paste("graph-data/", suffix, "nodes.csv", sep = "")
   
   node.ids = filtered.votes.nodes[["Id"]]
   filtered.votes.edges =
     votes.edges[ votes.edges$Source %in% node.ids & votes.edges$Target %in% node.ids, ]
-  edges.file.name = paste("votes-edges", suffix, ".csv", sep = "")
+  edges.file.name = paste("graph-data/", suffix, "edges.csv", sep = "")
   
   cat("Writing files...\n")
   

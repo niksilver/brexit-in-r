@@ -150,7 +150,7 @@ write.graph.files(
   votes.nodes
   , votes.edges
   , nodes.filter = function(nodes) { nodes$MeaningfulVote == TRUE }
-  , suffix = "-meaningful"
+  , suffix = "meaningful-"
 )
 
 # Write just the PM's votes
@@ -159,7 +159,7 @@ write.graph.files(
   votes.nodes
   , votes.edges
   , nodes.filter = function(nodes) { nodes$PMs == TRUE }
-  , suffix = "-pms"
+  , suffix = "pms-"
 )
 
 # Write just the indicative votes
@@ -168,7 +168,7 @@ write.graph.files(
   votes.nodes
   , votes.edges
   , nodes.filter = function(nodes) { nodes$Indicative == TRUE }
-  , suffix = "-indicative"
+  , suffix = "indicative-"
 )
 
 # Write just the votes about market arrangements
@@ -177,5 +177,5 @@ write.graph.files(
   votes.nodes
   , votes.edges
   , nodes.filter = function(nodes) { nodes$Markets == TRUE }
-  , suffix = "-markets"
+  , suffix = "markets-"
 )
