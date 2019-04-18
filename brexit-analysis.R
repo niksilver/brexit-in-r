@@ -48,12 +48,15 @@ pretty.urls =
      , "http://explore.data.parliament.uk/?endpoint=commonsdivisions/id/1108905"  # Ind 2, Customs U
      , "http://explore.data.parliament.uk/?endpoint=commonsdivisions/id/1108904"  # Ind 2, C Mkt 2.0
      , "http://explore.data.parliament.uk/?endpoint=commonsdivisions/id/1108643"  # Ind 2
-     , "http://explore.data.parliament.uk/?endpoint=commonsdivisions/id/1109326"  # Cooper (B of H)
-     , "http://explore.data.parliament.uk/?endpoint=commonsdivisions/id/1109325"  # Cooper, Benn amdt
-     , "http://explore.data.parliament.uk/?endpoint=commonsdivisions/id/1109591"  # Cooper main
-     , "http://explore.data.parliament.uk/?endpoint=commonsdivisions/id/1109553"  # Cooper, Eustice
-     , "http://explore.data.parliament.uk/?endpoint=commonsdivisions/id/1109554"  # Cooper, Gvt
-     , "http://explore.data.parliament.uk/?endpoint=commonsdivisions/id/1109556"  # Cooper, amdt 1
+     
+     , "http://explore.data.parliament.uk/?endpoint=commonsdivisions/id/1109326"  # 3 Apr, (Cooper BofH) MPs ext
+     , "http://explore.data.parliament.uk/?endpoint=commonsdivisions/id/1109325"  # 3 Apr, more ind votes
+     , "http://explore.data.parliament.uk/?endpoint=commonsdivisions/id/1109591"  # 3 Apr (Cooper main)
+     , "http://explore.data.parliament.uk/?endpoint=commonsdivisions/id/1109553"  # 3 Apr, no vote on other ext'n
+     , "http://explore.data.parliament.uk/?endpoint=commonsdivisions/id/1109554"  # 3 Apr, Gvt, Brex Sec free
+     , "http://explore.data.parliament.uk/?endpoint=commonsdivisions/id/1109556"  # 3 Apr, ext limited to 22/5
+
+     , "http://explore.data.parliament.uk/?endpoint=commonsdivisions/id/1110514"  # Ext to 30 June
   )
 
 # Create raw data
