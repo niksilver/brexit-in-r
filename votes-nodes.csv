@@ -1,101 +1,101 @@
-"Id","Label","VoteName","Count","MeaningfulVote","Indicative"
-4021,"Cooper, Benn amdt (Aye)","Aye",310,FALSE,FALSE
-4020,"Cooper, Benn amdt (No)","No",310,FALSE,FALSE
-3571,"No ND, Spelman (Aye)","Aye",312,FALSE,FALSE
-3570,"No ND, Spelman (No)","No",309,FALSE,FALSE
-3581,"No ND, Malthouse (Aye)","Aye",164,FALSE,FALSE
-3580,"No ND, Malthouse (No)","No",374,FALSE,FALSE
-3851,"Ind 1 (Aye)","Aye",331,FALSE,TRUE
-3850,"Ind 1 (No)","No",287,FALSE,TRUE
-3961,"Ind 2 (Aye)","Aye",322,FALSE,TRUE
-3960,"Ind 2 (No)","No",277,FALSE,TRUE
-4031,"Cooper (B of H) (Aye)","Aye",312,FALSE,FALSE
-4030,"Cooper (B of H) (No)","No",311,FALSE,FALSE
-3941,"Ext to 12 April (Aye)","Aye",440,FALSE,FALSE
-3940,"Ext to 12 April (No)","No",105,FALSE,FALSE
-3071,"29 Jan, Corbyn (a) (Aye)","Aye",296,FALSE,FALSE
-3070,"29 Jan, Corbyn (a) (No)","No",327,FALSE,FALSE
-3101,"29 Jan, Cooper (b) (Aye)","Aye",298,FALSE,FALSE
-3100,"29 Jan, Cooper (b) (No)","No",321,FALSE,FALSE
-3091,"29 Jan, Grieve (g) (Aye)","Aye",301,FALSE,FALSE
-3090,"29 Jan, Grieve (g) (No)","No",321,FALSE,FALSE
-3121,"29 Jan, Spelman (i) (Aye)","Aye",318,FALSE,FALSE
-3120,"29 Jan, Spelman (i) (No)","No",310,FALSE,FALSE
-3111,"29 Jan, Reeves (j) (Aye)","Aye",290,FALSE,FALSE
-3110,"29 Jan, Reeves (j) (No)","No",322,FALSE,FALSE
-3131,"29 Jan, Brady (n) (Aye)","Aye",317,FALSE,FALSE
-3130,"29 Jan, Brady (n) (No)","No",301,FALSE,FALSE
-3081,"29 Jan, Blackford (o) (Aye)","Aye",39,FALSE,FALSE
-3080,"29 Jan, Blackford (o) (No)","No",327,FALSE,FALSE
-4071,"Cooper, amdt 1 (Aye)","Aye",123,FALSE,FALSE
-4070,"Cooper, amdt 1 (No)","No",488,FALSE,FALSE
-4051,"Cooper, Eustice (Aye)","Aye",304,FALSE,FALSE
-4050,"Cooper, Eustice (No)","No",313,FALSE,FALSE
-4061,"Cooper, Gvt (Aye)","Aye",219,FALSE,FALSE
-4060,"Cooper, Gvt (No)","No",400,FALSE,FALSE
-4091,"Cooper main (Aye)","Aye",313,FALSE,FALSE
-4090,"Cooper main (No)","No",312,FALSE,FALSE
-2921,"MV 1, Baron (f) (Aye)","Aye",24,FALSE,FALSE
-2920,"MV 1, Baron (f) (No)","No",600,FALSE,FALSE
-2931,"MV 1 (Aye)","Aye",202,TRUE,FALSE
-2930,"MV 1 (No)","No",432,TRUE,FALSE
-3731,"Stmt, Letwin (Aye)","Aye",329,FALSE,FALSE
-3730,"Stmt, Letwin (No)","No",302,FALSE,FALSE
-3741,"Stmt, Beckett (Aye)","Aye",311,FALSE,FALSE
-3740,"Stmt, Beckett (No)","No",315,FALSE,FALSE
-3751,"Stmt, amdd (Aye)","Aye",327,FALSE,FALSE
-3750,"Stmt, amdd (No)","No",300,FALSE,FALSE
-3881,"Ind 1, EFTA and EEA (Aye)","Aye",64,FALSE,TRUE
-3880,"Ind 1, EFTA and EEA (No)","No",377,FALSE,TRUE
-3901,"Ind 1, Labour alt (Aye)","Aye",237,FALSE,TRUE
-3900,"Ind 1, Labour alt (No)","No",307,FALSE,TRUE
-4001,"Ind 2, Parl. decide (Aye)","Aye",191,FALSE,TRUE
-4000,"Ind 2, Parl. decide (No)","No",292,FALSE,TRUE
-3911,"Ind 1, Revoke if ND (Aye)","Aye",184,FALSE,TRUE
-3910,"Ind 1, Revoke if ND (No)","No",293,FALSE,TRUE
-3591,"No ND, amdd (Aye)","Aye",321,FALSE,FALSE
-3590,"No ND, amdd (No)","No",278,FALSE,FALSE
-3921,"Ind 1, Conf pub vote (Aye)","Aye",268,FALSE,TRUE
-3920,"Ind 1, Conf pub vote (No)","No",295,FALSE,TRUE
-3861,"Ind 1, ND (Aye)","Aye",160,FALSE,TRUE
-3860,"Ind 1, ND (No)","No",400,FALSE,TRUE
-3971,"Ind 2, Customs U (Aye)","Aye",273,FALSE,TRUE
-3970,"Ind 2, Customs U (No)","No",276,FALSE,TRUE
-3891,"Ind 1, Customs U (Aye)","Aye",265,FALSE,TRUE
-3890,"Ind 1, Customs U (No)","No",271,FALSE,TRUE
-3931,"Ind 1, Cont pref arr (Aye)","Aye",139,FALSE,TRUE
-3930,"Ind 1, Cont pref arr (No)","No",422,FALSE,TRUE
-3871,"Ind 1, C Mkt 2.0 (Aye)","Aye",189,FALSE,TRUE
-3870,"Ind 1, C Mkt 2.0 (No)","No",283,FALSE,TRUE
-3981,"Ind 2, C Mkt 2.0 (Aye)","Aye",261,FALSE,TRUE
-3980,"Ind 2, C Mkt 2.0 (No)","No",282,FALSE,TRUE
-2961,"No conf (Aye)","Aye",306,FALSE,FALSE
-2960,"No conf (No)","No",325,FALSE,FALSE
-3991,"Ind 2, Conf pub vote (Aye)","Aye",280,FALSE,TRUE
-3990,"Ind 2, Conf pub vote (No)","No",292,FALSE,TRUE
-3541,"MV 2 (Aye)","Aye",242,TRUE,FALSE
-3540,"MV 2 (No)","No",391,TRUE,FALSE
-3331,"14 Feb, Ack (Aye)","Aye",259,FALSE,FALSE
-3330,"14 Feb, Ack (No)","No",303,FALSE,FALSE
-3461,"27 Feb, Blackford (Aye)","Aye",288,FALSE,FALSE
-3460,"27 Feb, Blackford (No)","No",324,FALSE,FALSE
-3321,"14 Feb, Blackford (Aye)","Aye",93,FALSE,FALSE
-3320,"14 Feb, Blackford (No)","No",315,FALSE,FALSE
-3311,"14 Feb, Corbyn (Aye)","Aye",306,FALSE,FALSE
-3310,"14 Feb, Corbyn (No)","No",322,FALSE,FALSE
-3451,"27 Feb, Corbyn (Aye)","Aye",240,FALSE,FALSE
-3450,"27 Feb, Corbyn (No)","No",323,FALSE,FALSE
-3631,"Ext A50, Corbyn (Aye)","Aye",302,FALSE,FALSE
-3630,"Ext A50, Corbyn (No)","No",318,FALSE,FALSE
-3641,"Ext A50, 14 Mar (Aye)","Aye",413,FALSE,FALSE
-3640,"Ext A50, 14 Mar (No)","No",202,FALSE,FALSE
-3471,"27 Feb, Cooper (Aye)","Aye",502,FALSE,FALSE
-3470,"27 Feb, Cooper (No)","No",20,FALSE,FALSE
-3621,"Ext A50, Benn (Aye)","Aye",312,FALSE,FALSE
-3620,"Ext A50, Benn (No)","No",314,FALSE,FALSE
-3611,"Ext A50, Powell-Benn (Aye)","Aye",311,FALSE,FALSE
-3610,"Ext A50, Powell-Benn (No)","No",314,FALSE,FALSE
-3601,"Ext A50, Wollaston (Aye)","Aye",85,FALSE,FALSE
-3600,"Ext A50, Wollaston (No)","No",334,FALSE,FALSE
-3951,"MV 2.5 (Aye)","Aye",286,TRUE,FALSE
-3950,"MV 2.5 (No)","No",344,TRUE,FALSE
+"Id","Label","VoteName","Count","MeaningfulVote","PMs","Indicative","Markets"
+4021,"3 Apr, more ind votes (Aye)","Aye",310,FALSE,FALSE,FALSE,FALSE
+4020,"3 Apr, more ind votes (No)","No",310,FALSE,FALSE,FALSE,FALSE
+3571,"No ND, ever (Aye)","Aye",312,FALSE,FALSE,FALSE,FALSE
+3570,"No ND, ever (No)","No",309,FALSE,FALSE,FALSE,FALSE
+3581,"No ND, Malthouse (Aye)","Aye",164,FALSE,FALSE,FALSE,FALSE
+3580,"No ND, Malthouse (No)","No",374,FALSE,FALSE,FALSE,FALSE
+3851,"Ind 1 (Aye)","Aye",331,FALSE,FALSE,TRUE,FALSE
+3850,"Ind 1 (No)","No",287,FALSE,FALSE,TRUE,FALSE
+3961,"Ind 2 (Aye)","Aye",322,FALSE,FALSE,TRUE,FALSE
+3960,"Ind 2 (No)","No",277,FALSE,FALSE,TRUE,FALSE
+4031,"3 Apr, (Cooper BofH) MPs ext (Aye)","Aye",312,FALSE,FALSE,FALSE,FALSE
+4030,"3 Apr, (Cooper BofH) MPs ext (No)","No",311,FALSE,FALSE,FALSE,FALSE
+3941,"Ext to 12 April (Aye)","Aye",440,FALSE,TRUE,FALSE,FALSE
+3940,"Ext to 12 April (No)","No",105,FALSE,TRUE,FALSE,FALSE
+3071,"29 Jan, Labour alts (Aye)","Aye",296,FALSE,FALSE,FALSE,TRUE
+3070,"29 Jan, Labour alts (No)","No",327,FALSE,FALSE,FALSE,TRUE
+3101,"29 Jan, ext + MPs plan if ND by 26/2 (Aye)","Aye",298,FALSE,FALSE,FALSE,FALSE
+3100,"29 Jan, ext + MPs plan if ND by 26/2 (No)","No",321,FALSE,FALSE,FALSE,FALSE
+3091,"29 Jan, MPs debate alts (Aye)","Aye",301,FALSE,FALSE,FALSE,FALSE
+3090,"29 Jan, MPs debate alts (No)","No",321,FALSE,FALSE,FALSE,FALSE
+3121,"29 Jan, no ND (Aye)","Aye",318,FALSE,FALSE,FALSE,FALSE
+3120,"29 Jan, no ND (No)","No",310,FALSE,FALSE,FALSE,FALSE
+3111,"29 Jan, ext if ND by 26/2 (Aye)","Aye",290,FALSE,FALSE,FALSE,FALSE
+3110,"29 Jan, ext if ND by 26/2 (No)","No",322,FALSE,FALSE,FALSE,FALSE
+3131,"29 Jan, b'stop alt. arr'ments (Aye)","Aye",317,FALSE,FALSE,FALSE,FALSE
+3130,"29 Jan, b'stop alt. arr'ments (No)","No",301,FALSE,FALSE,FALSE,FALSE
+3081,"29 Jan, ext and no ND (Aye)","Aye",39,FALSE,FALSE,FALSE,FALSE
+3080,"29 Jan, ext and no ND (No)","No",327,FALSE,FALSE,FALSE,FALSE
+4071,"3 Apr, ext limited to 22/5 (Aye)","Aye",123,FALSE,FALSE,FALSE,FALSE
+4070,"3 Apr, ext limited to 22/5 (No)","No",488,FALSE,FALSE,FALSE,FALSE
+4051,"3 Apr, no vote on other ext'n (Aye)","Aye",304,FALSE,FALSE,FALSE,FALSE
+4050,"3 Apr, no vote on other ext'n (No)","No",313,FALSE,FALSE,FALSE,FALSE
+4061,"3 Apr, Gvt, Brex Sec free (Aye)","Aye",219,FALSE,TRUE,FALSE,FALSE
+4060,"3 Apr, Gvt, Brex Sec free (No)","No",400,FALSE,TRUE,FALSE,FALSE
+4091,"3 Apr (Cooper main) (Aye)","Aye",313,FALSE,FALSE,FALSE,FALSE
+4090,"3 Apr (Cooper main) (No)","No",312,FALSE,FALSE,FALSE,FALSE
+2921,"MV 1, term. b'stop (Aye)","Aye",24,FALSE,FALSE,FALSE,FALSE
+2920,"MV 1, term. b'stop (No)","No",600,FALSE,FALSE,FALSE,FALSE
+2931,"MV 1 (Aye)","Aye",202,TRUE,TRUE,FALSE,TRUE
+2930,"MV 1 (No)","No",432,TRUE,TRUE,FALSE,TRUE
+3731,"Stmt, ind votes (Aye)","Aye",329,FALSE,FALSE,FALSE,FALSE
+3730,"Stmt, ind votes (No)","No",302,FALSE,FALSE,FALSE,FALSE
+3741,"Stmt, MPs vote ext (Aye)","Aye",311,FALSE,FALSE,FALSE,FALSE
+3740,"Stmt, MPs vote ext (No)","No",315,FALSE,FALSE,FALSE,FALSE
+3751,"Stmt, amdd w/ind votes (Aye)","Aye",327,FALSE,TRUE,FALSE,FALSE
+3750,"Stmt, amdd w/ind votes (No)","No",300,FALSE,TRUE,FALSE,FALSE
+3881,"Ind 1, EFTA and EEA (Aye)","Aye",64,FALSE,FALSE,TRUE,TRUE
+3880,"Ind 1, EFTA and EEA (No)","No",377,FALSE,FALSE,TRUE,TRUE
+3901,"Ind 1, Labour alt (Aye)","Aye",237,FALSE,FALSE,TRUE,TRUE
+3900,"Ind 1, Labour alt (No)","No",307,FALSE,FALSE,TRUE,TRUE
+4001,"Ind 2, Parl. decide (Aye)","Aye",191,FALSE,FALSE,TRUE,FALSE
+4000,"Ind 2, Parl. decide (No)","No",292,FALSE,FALSE,TRUE,FALSE
+3911,"Ind 1, Revoke if ND (Aye)","Aye",184,FALSE,FALSE,TRUE,FALSE
+3910,"Ind 1, Revoke if ND (No)","No",293,FALSE,FALSE,TRUE,FALSE
+3591,"No ND, amdd (Aye)","Aye",321,FALSE,TRUE,FALSE,FALSE
+3590,"No ND, amdd (No)","No",278,FALSE,TRUE,FALSE,FALSE
+3921,"Ind 1, Conf pub vote (Aye)","Aye",268,FALSE,FALSE,TRUE,FALSE
+3920,"Ind 1, Conf pub vote (No)","No",295,FALSE,FALSE,TRUE,FALSE
+3861,"Ind 1, ND (Aye)","Aye",160,FALSE,FALSE,TRUE,FALSE
+3860,"Ind 1, ND (No)","No",400,FALSE,FALSE,TRUE,FALSE
+3971,"Ind 2, Customs U (Aye)","Aye",273,FALSE,FALSE,TRUE,TRUE
+3970,"Ind 2, Customs U (No)","No",276,FALSE,FALSE,TRUE,TRUE
+3891,"Ind 1, Customs U (Aye)","Aye",265,FALSE,FALSE,TRUE,TRUE
+3890,"Ind 1, Customs U (No)","No",271,FALSE,FALSE,TRUE,TRUE
+3931,"Ind 1, Cont pref arr (Aye)","Aye",139,FALSE,FALSE,TRUE,TRUE
+3930,"Ind 1, Cont pref arr (No)","No",422,FALSE,FALSE,TRUE,TRUE
+3871,"Ind 1, C Mkt 2.0 (Aye)","Aye",189,FALSE,FALSE,TRUE,TRUE
+3870,"Ind 1, C Mkt 2.0 (No)","No",283,FALSE,FALSE,TRUE,TRUE
+3981,"Ind 2, C Mkt 2.0 (Aye)","Aye",261,FALSE,FALSE,TRUE,TRUE
+3980,"Ind 2, C Mkt 2.0 (No)","No",282,FALSE,FALSE,TRUE,TRUE
+2961,"No conf (Aye)","Aye",306,FALSE,FALSE,FALSE,FALSE
+2960,"No conf (No)","No",325,FALSE,FALSE,FALSE,FALSE
+3991,"Ind 2, Conf pub vote (Aye)","Aye",280,FALSE,FALSE,TRUE,FALSE
+3990,"Ind 2, Conf pub vote (No)","No",292,FALSE,FALSE,TRUE,FALSE
+3541,"MV 2 (Aye)","Aye",242,TRUE,TRUE,FALSE,TRUE
+3540,"MV 2 (No)","No",391,TRUE,TRUE,FALSE,TRUE
+3331,"14 Feb, Ack (Aye)","Aye",259,FALSE,TRUE,FALSE,FALSE
+3330,"14 Feb, Ack (No)","No",303,FALSE,TRUE,FALSE,FALSE
+3461,"27 Feb, no ND, even if ext'n (Aye)","Aye",288,FALSE,FALSE,FALSE,FALSE
+3460,"27 Feb, no ND, even if ext'n (No)","No",324,FALSE,FALSE,FALSE,FALSE
+3321,"14 Feb, delay by 3 mth (Aye)","Aye",93,FALSE,FALSE,FALSE,FALSE
+3320,"14 Feb, delay by 3 mth (No)","No",315,FALSE,FALSE,FALSE,FALSE
+3311,"14 Feb, MPs decide if ND by 27/2 (Aye)","Aye",306,FALSE,FALSE,FALSE,FALSE
+3310,"14 Feb, MPs decide if ND by 27/2 (No)","No",322,FALSE,FALSE,FALSE,FALSE
+3451,"27 Feb, Cust U + s.mkt alig (Aye)","Aye",240,FALSE,FALSE,FALSE,TRUE
+3450,"27 Feb, Cust U + s.mkt alig (No)","No",323,FALSE,FALSE,FALSE,TRUE
+3631,"14 Mar, MPs solve (Aye)","Aye",302,FALSE,FALSE,FALSE,FALSE
+3630,"14 Mar, MPs solve (No)","No",318,FALSE,FALSE,FALSE,FALSE
+3641,"14 Mar, ext if WA approved (Aye)","Aye",413,FALSE,TRUE,FALSE,FALSE
+3640,"14 Mar, ext if WA approved (No)","No",202,FALSE,TRUE,FALSE,FALSE
+3471,"27 Feb, no ND ever (Aye)","Aye",502,FALSE,FALSE,FALSE,FALSE
+3470,"27 Feb, no ND ever (No)","No",20,FALSE,FALSE,FALSE,FALSE
+3621,"14 Mar, MPs debate (Aye)","Aye",312,FALSE,FALSE,FALSE,FALSE
+3620,"14 Mar, MPs debate (No)","No",314,FALSE,FALSE,FALSE,FALSE
+3611,"14 Mar, limit MPs' debate (Aye)","Aye",311,FALSE,FALSE,FALSE,FALSE
+3610,"14 Mar, limit MPs' debate (No)","No",314,FALSE,FALSE,FALSE,FALSE
+3601,"14 Mar, 2nd ref'm (Aye)","Aye",85,FALSE,FALSE,FALSE,FALSE
+3600,"14 Mar, 2nd ref'm (No)","No",334,FALSE,FALSE,FALSE,FALSE
+3951,"MV 2.5 (Aye)","Aye",286,TRUE,TRUE,FALSE,TRUE
+3950,"MV 2.5 (No)","No",344,TRUE,TRUE,FALSE,TRUE

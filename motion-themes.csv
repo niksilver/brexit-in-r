@@ -1,51 +1,51 @@
-title,date,short.title,meaningful.vote,pms,indicative
-European Union (Withdrawal) Act main Motion (Prime Minister),2019-01-15,MV 1,TRUE,TRUE,FALSE
-European Union (Withdrawal) Act Amdt (f) - Baron,2019-01-15,"MV 1, Baron (f)",FALSE,FALSE,FALSE
-No confidence in Her Majesty's Government,2019-01-16,No conf,FALSE,FALSE,FALSE
-EU (Withdrawal) Act Section 13 Amdt (n) - Brady,2019-01-29,"29 Jan, Brady (n)",FALSE,FALSE,FALSE
-EU (Withdrawal) Act Section 13 Amdt (i) - Spelman,2019-01-29,"29 Jan, Spelman (i)",FALSE,FALSE,FALSE
-EU (Withdrawal) Act Section 13 Amdt (j) - Reeves,2019-01-29,"29 Jan, Reeves (j)",FALSE,FALSE,FALSE
-EU (Withdrawal) Act Section 13 Amdt (b) - Cooper,2019-01-29,"29 Jan, Cooper (b)",FALSE,FALSE,FALSE
-EU (Withdrawal) Act Section 13 Amdt (g) - Grieve,2019-01-29,"29 Jan, Grieve (g)",FALSE,FALSE,FALSE
-EU (Withdrawal) Act Section 13 Amdt (o) - Blackford,2019-01-29,"29 Jan, Blackford (o)",FALSE,FALSE,FALSE
-EU (Withdrawal) Act Section 13 Amdt (a) - Corbyn,2019-01-29,"29 Jan, Corbyn (a)",FALSE,FALSE,FALSE
-UK's withdrawal from the EU: main motion,2019-02-14,"14 Feb, Ack",FALSE,TRUE,FALSE
-UK's withdrawal from the EU: Mr Blackford's amendment,2019-02-14,"14 Feb, Blackford",FALSE,FALSE,FALSE
-UK's withdrawal from the EU: Mr Corbyn's amendment (a),2019-02-14,"14 Feb, Corbyn",FALSE,FALSE,FALSE
-UK's withdrawal from the EU: Yvette Cooper's amendment (f),2019-02-27,"27 Feb, Cooper",FALSE,FALSE,FALSE
-UK's withdrawal from the EU: Mr Blackford's amendment (k),2019-02-27,"27 Feb, Blackford",FALSE,FALSE,FALSE
-UK's withdrawal from the EU: Mr Corbyn's amendment (a),2019-02-27,"27 Feb, Corbyn",FALSE,FALSE,FALSE
-Section 13(1)(b) of the European Union (Withdrawal) Act main motion,2019-03-12,MV 2,TRUE,TRUE,FALSE
-"Main motion, as amended by amendment (a), on UK's withdrawal from the European Union",2019-03-13,"No ND, amdd",FALSE,TRUE,FALSE
-Amendment (a) to the motion on the UK's withdrawal from the European Union,2019-03-13,"No ND, Spelman",FALSE,FALSE,FALSE
-Amendment (f) to the motion on the UK's withdrawal from the European Union,2019-03-13,"No ND, Malthouse",FALSE,FALSE,FALSE
-UK's withdrawal from the EU: Prime Minister's motion,2019-03-14,"Ext A50, 14 Mar",FALSE,TRUE,FALSE
-UK's withdrawal from the EU: Mr Corbyn's amendment (e),2019-03-14,"Ext A50, Corbyn",FALSE,FALSE,FALSE
-UK's withdrawal from the European Union: Hilary Benn's amendment (i),2019-03-14,"Ext A50, Benn",FALSE,FALSE,FALSE
-UK's withdrawal from the European Union: Lucy Powell's amendment to Hilary Benn's amendment (i),2019-03-14,"Ext A50, Powell-Benn",FALSE,FALSE,FALSE
-UK's withdrawal from the European Union: Sarah Wollaston's amendment (h),2019-03-14,"Ext A50, Wollaston",FALSE,FALSE,FALSE
-European Union Withdrawal Act main Motion as amended,2019-03-25,"Stmt, amdd",FALSE,TRUE,FALSE
-European Union Withdrawal Act Amendment (f) - Beckett,2019-03-25,"Stmt, Beckett",FALSE,FALSE,FALSE
-European Union Withdrawal Act Amendment (a) - Letwin,2019-03-25,"Stmt, Letwin",FALSE,FALSE,FALSE
-Draft European Union (Withdrawal) Act 2018 (Exit Day) (Amendment) Regulations 2019,2019-03-27,Ext to 12 April,FALSE,TRUE,FALSE
-Business of the House motion,2019-03-27,Ind 1,FALSE,FALSE,TRUE
-Mr Fysh's motion O (Contingent preferential arrangements),2019-03-27,"Ind 1, Cont pref arr",FALSE,FALSE,TRUE
-Margaret Beckett's motion M (Confirmatory public vote),2019-03-27,"Ind 1, Conf pub vote",FALSE,FALSE,TRUE
-Joanna Cherry's motion L (Revocation to avoid no deal),2019-03-27,"Ind 1, Revoke if ND",FALSE,FALSE,TRUE
-Jeremy Corbyn's motion K (Labour's alternative plan),2019-03-27,"Ind 1, Labour alt",FALSE,FALSE,TRUE
-Mr Clarke's motion J (Customs union),2019-03-27,"Ind 1, Customs U",FALSE,FALSE,TRUE
-George Eustice's motion H (EFTA and EEA),2019-03-27,"Ind 1, EFTA and EEA",FALSE,FALSE,TRUE
-Nick Boles's motion D (Common market 2.0),2019-03-27,"Ind 1, C Mkt 2.0",FALSE,FALSE,TRUE
-Mr Baron's motion B (No deal),2019-03-27,"Ind 1, ND",FALSE,FALSE,TRUE
-United Kingdom's withdrawal from the European Union,2019-03-29,MV 2.5,TRUE,TRUE,FALSE
-Joanna Cherry's motion G (Parliamentary Supremacy),2019-04-01,"Ind 2, Parl. decide",FALSE,FALSE,TRUE
-Peter Kyle's motion E (Confirmatory public vote),2019-04-01,"Ind 2, Conf pub vote",FALSE,FALSE,TRUE
-Mr Clarke's motion C (Customs Union),2019-04-01,"Ind 2, Customs U",FALSE,FALSE,TRUE
-Nick Boles's motion D (Common Market 2.0),2019-04-01,"Ind 2, C Mkt 2.0",FALSE,FALSE,TRUE
-Business of the House motion,2019-04-01,Ind 2,FALSE,FALSE,TRUE
-Business of the House motion,2019-04-03,Cooper (B of H),FALSE,FALSE,FALSE
-Amendment (a) to the Business of the House motion,2019-04-03,"Cooper, Benn amdt",FALSE,FALSE,FALSE
-European Union (Withdrawal) (No.5) Bill Third Reading,2019-04-03,Cooper main,FALSE,FALSE,FALSE
-European Union (Withdrawal) (No.5) Bill Committee Amdt 21 - Eustice,2019-04-03,"Cooper, Eustice",FALSE,FALSE,FALSE
-European Union (Withdrawal) (No.5) Bill Committee Gov Amdt 22,2019-04-03,"Cooper, Gvt",FALSE,TRUE,FALSE
-European Union (Withdrawal) (No.5) Bill Committee Amdt 1 - Main,2019-04-03,"Cooper, amdt 1",FALSE,FALSE,FALSE
+title,date,short.title,meaningful.vote,pms,indicative,markets
+European Union (Withdrawal) Act main Motion (Prime Minister),2019-01-15,MV 1,TRUE,TRUE,FALSE,TRUE
+European Union (Withdrawal) Act Amdt (f) - Baron,2019-01-15,"MV 1, term. b'stop",FALSE,FALSE,FALSE,FALSE
+No confidence in Her Majesty's Government,2019-01-16,No conf,FALSE,FALSE,FALSE,FALSE
+EU (Withdrawal) Act Section 13 Amdt (n) - Brady,2019-01-29,"29 Jan, b'stop alt. arr'ments",FALSE,FALSE,FALSE,FALSE
+EU (Withdrawal) Act Section 13 Amdt (i) - Spelman,2019-01-29,"29 Jan, no ND",FALSE,FALSE,FALSE,FALSE
+EU (Withdrawal) Act Section 13 Amdt (j) - Reeves,2019-01-29,"29 Jan, ext if ND by 26/2",FALSE,FALSE,FALSE,FALSE
+EU (Withdrawal) Act Section 13 Amdt (b) - Cooper,2019-01-29,"29 Jan, ext + MPs plan if ND by 26/2",FALSE,FALSE,FALSE,FALSE
+EU (Withdrawal) Act Section 13 Amdt (g) - Grieve,2019-01-29,"29 Jan, MPs debate alts",FALSE,FALSE,FALSE,FALSE
+EU (Withdrawal) Act Section 13 Amdt (o) - Blackford,2019-01-29,"29 Jan, ext and no ND",FALSE,FALSE,FALSE,FALSE
+EU (Withdrawal) Act Section 13 Amdt (a) - Corbyn,2019-01-29,"29 Jan, Labour alts",FALSE,FALSE,FALSE,TRUE
+UK's withdrawal from the EU: main motion,2019-02-14,"14 Feb, Ack",FALSE,TRUE,FALSE,FALSE
+UK's withdrawal from the EU: Mr Blackford's amendment,2019-02-14,"14 Feb, delay by 3 mth",FALSE,FALSE,FALSE,FALSE
+UK's withdrawal from the EU: Mr Corbyn's amendment (a),2019-02-14,"14 Feb, MPs decide if ND by 27/2",FALSE,FALSE,FALSE,FALSE
+UK's withdrawal from the EU: Yvette Cooper's amendment (f),2019-02-27,"27 Feb, no ND ever",FALSE,FALSE,FALSE,FALSE
+UK's withdrawal from the EU: Mr Blackford's amendment (k),2019-02-27,"27 Feb, no ND, even if ext'n",FALSE,FALSE,FALSE,FALSE
+UK's withdrawal from the EU: Mr Corbyn's amendment (a),2019-02-27,"27 Feb, Cust U + s.mkt alig",FALSE,FALSE,FALSE,TRUE
+Section 13(1)(b) of the European Union (Withdrawal) Act main motion,2019-03-12,MV 2,TRUE,TRUE,FALSE,TRUE
+"Main motion, as amended by amendment (a), on UK's withdrawal from the European Union",2019-03-13,"No ND, amdd",FALSE,TRUE,FALSE,FALSE
+Amendment (a) to the motion on the UK's withdrawal from the European Union,2019-03-13,"No ND, ever",FALSE,FALSE,FALSE,FALSE
+Amendment (f) to the motion on the UK's withdrawal from the European Union,2019-03-13,"No ND, Malthouse",FALSE,FALSE,FALSE,FALSE
+UK's withdrawal from the EU: Prime Minister's motion,2019-03-14,"14 Mar, ext if WA approved",FALSE,TRUE,FALSE,FALSE
+UK's withdrawal from the EU: Mr Corbyn's amendment (e),2019-03-14,"14 Mar, MPs solve",FALSE,FALSE,FALSE,FALSE
+UK's withdrawal from the European Union: Hilary Benn's amendment (i),2019-03-14,"14 Mar, MPs debate",FALSE,FALSE,FALSE,FALSE
+UK's withdrawal from the European Union: Lucy Powell's amendment to Hilary Benn's amendment (i),2019-03-14,"14 Mar, limit MPs' debate",FALSE,FALSE,FALSE,FALSE
+UK's withdrawal from the European Union: Sarah Wollaston's amendment (h),2019-03-14,"14 Mar, 2nd ref'm",FALSE,FALSE,FALSE,FALSE
+European Union Withdrawal Act main Motion as amended,2019-03-25,"Stmt, amdd w/ind votes",FALSE,TRUE,FALSE,FALSE
+European Union Withdrawal Act Amendment (f) - Beckett,2019-03-25,"Stmt, MPs vote ext",FALSE,FALSE,FALSE,FALSE
+European Union Withdrawal Act Amendment (a) - Letwin,2019-03-25,"Stmt, ind votes",FALSE,FALSE,FALSE,FALSE
+Draft European Union (Withdrawal) Act 2018 (Exit Day) (Amendment) Regulations 2019,2019-03-27,Ext to 12 April,FALSE,TRUE,FALSE,FALSE
+Business of the House motion,2019-03-27,Ind 1,FALSE,FALSE,TRUE,FALSE
+Mr Fysh's motion O (Contingent preferential arrangements),2019-03-27,"Ind 1, Cont pref arr",FALSE,FALSE,TRUE,TRUE
+Margaret Beckett's motion M (Confirmatory public vote),2019-03-27,"Ind 1, Conf pub vote",FALSE,FALSE,TRUE,FALSE
+Joanna Cherry's motion L (Revocation to avoid no deal),2019-03-27,"Ind 1, Revoke if ND",FALSE,FALSE,TRUE,FALSE
+Jeremy Corbyn's motion K (Labour's alternative plan),2019-03-27,"Ind 1, Labour alt",FALSE,FALSE,TRUE,TRUE
+Mr Clarke's motion J (Customs union),2019-03-27,"Ind 1, Customs U",FALSE,FALSE,TRUE,TRUE
+George Eustice's motion H (EFTA and EEA),2019-03-27,"Ind 1, EFTA and EEA",FALSE,FALSE,TRUE,TRUE
+Nick Boles's motion D (Common market 2.0),2019-03-27,"Ind 1, C Mkt 2.0",FALSE,FALSE,TRUE,TRUE
+Mr Baron's motion B (No deal),2019-03-27,"Ind 1, ND",FALSE,FALSE,TRUE,FALSE
+United Kingdom's withdrawal from the European Union,2019-03-29,MV 2.5,TRUE,TRUE,FALSE,TRUE
+Joanna Cherry's motion G (Parliamentary Supremacy),2019-04-01,"Ind 2, Parl. decide",FALSE,FALSE,TRUE,FALSE
+Peter Kyle's motion E (Confirmatory public vote),2019-04-01,"Ind 2, Conf pub vote",FALSE,FALSE,TRUE,FALSE
+Mr Clarke's motion C (Customs Union),2019-04-01,"Ind 2, Customs U",FALSE,FALSE,TRUE,TRUE
+Nick Boles's motion D (Common Market 2.0),2019-04-01,"Ind 2, C Mkt 2.0",FALSE,FALSE,TRUE,TRUE
+Business of the House motion,2019-04-01,Ind 2,FALSE,FALSE,TRUE,FALSE
+Business of the House motion,2019-04-03,"3 Apr, (Cooper BofH) MPs ext",FALSE,FALSE,FALSE,FALSE
+Amendment (a) to the Business of the House motion,2019-04-03,"3 Apr, more ind votes",FALSE,FALSE,FALSE,FALSE
+European Union (Withdrawal) (No.5) Bill Third Reading,2019-04-03,3 Apr (Cooper main),FALSE,FALSE,FALSE,FALSE
+European Union (Withdrawal) (No.5) Bill Committee Amdt 21 - Eustice,2019-04-03,"3 Apr, no vote on other ext'n",FALSE,FALSE,FALSE,FALSE
+European Union (Withdrawal) (No.5) Bill Committee Gov Amdt 22,2019-04-03,"3 Apr, Gvt, Brex Sec free",FALSE,TRUE,FALSE,FALSE
+European Union (Withdrawal) (No.5) Bill Committee Amdt 1 - Main,2019-04-03,"3 Apr, ext limited to 22/5",FALSE,FALSE,FALSE,FALSE

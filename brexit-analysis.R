@@ -68,8 +68,10 @@ voted.motions = unique( data.frame(
   , name = raw.data$vote.name
   , count = raw.data$vote.count
   , meaningful.vote = raw.data$meaningful.vote
+  , pms = raw.data$pms
   , indicative = raw.data$indicative
-  ))
+  , markets = raw.data$markets
+))
 
 
 # Get combinations of all pairs of voted motions.
@@ -115,7 +117,9 @@ votes.nodes = data.frame(
   , VoteName = voted.motions$name
   , Count = voted.motions$count
   , MeaningfulVote = voted.motions$meaningful.vote
+  , PMs = voted.motions$pms
   , Indicative = voted.motions$indicative
+  , Markets = voted.motions$markets
 )
 
 # Divisions are numbered in the sequence in which they actually occurred, so
@@ -146,6 +150,15 @@ write.graph.files(
   , suffix = "-meaningful"
 )
 
+# Write just the PM's votes
+
+write.graph.files(
+  votes.nodes
+  , votes.edges
+  , nodes.filter = function(nodes) { nodes$PMs == TRUE }
+  , suffix = "-pms"
+)
+
 # Write just the indicative votes
 
 write.graph.files(
@@ -153,4 +166,13 @@ write.graph.files(
   , votes.edges
   , nodes.filter = function(nodes) { nodes$Indicative == TRUE }
   , suffix = "-indicative"
+)
+
+# Write just the votes about market arrangements
+
+write.graph.files(
+  votes.nodes
+  , votes.edges
+  , nodes.filter = function(nodes) { nodes$Markets == TRUE }
+  , suffix = "-markets"
 )
