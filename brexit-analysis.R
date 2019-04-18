@@ -74,6 +74,7 @@ voted.motions = unique( data.frame(
   , pms = raw.data$pms
   , indicative = raw.data$indicative
   , markets = raw.data$markets
+  , topic = raw.data$topic
 ))
 
 
@@ -123,6 +124,7 @@ votes.nodes = data.frame(
   , PMs = voted.motions$pms
   , Indicative = voted.motions$indicative
   , Markets = voted.motions$markets
+  , Topic = voted.motions$topic
 )
 
 # Divisions are numbered in the sequence in which they actually occurred, so
@@ -185,4 +187,3 @@ write.graph.files(
   , votes.edges[ !(votes.edges$Source %in% mv.node.ids) | !(votes.edges$Target %in% mv.node.ids), ]
   , suffix = "markets-with-unconnected-mvs-"
 )
-
