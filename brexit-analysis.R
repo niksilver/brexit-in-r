@@ -70,7 +70,7 @@ voted.motions = unique( data.frame(
   , title = raw.data$vote.title
   , name = raw.data$vote.name
   , count = raw.data$vote.count
-  , meaningful.vote = raw.data$meaningful.vote
+  , meaningful = raw.data$meaningful
   , pms = raw.data$pms
   , indicative = raw.data$indicative
   , markets = raw.data$markets
@@ -119,7 +119,7 @@ votes.nodes = data.frame(
   , Label = voted.motions$title
   , VoteName = voted.motions$name
   , Count = voted.motions$count
-  , MeaningfulVote = voted.motions$meaningful.vote
+  , Meaningful = voted.motions$meaningful
   , PMs = voted.motions$pms
   , Indicative = voted.motions$indicative
   , Markets = voted.motions$markets
@@ -147,7 +147,7 @@ write.graph.files(votes.nodes, votes.edges)
 # Write just the meaningful votes
 
 write.graph.files(
-  votes.nodes[ votes.nodes$MeaningfulVote == TRUE, ]
+  votes.nodes[ votes.nodes$Meaningful == TRUE, ]
   , votes.edges
   , suffix = "meaningful-"
 )
@@ -179,7 +179,7 @@ write.graph.files(
 # Write just the votes about market arrangements, without connecting MV nodes to each other.
 # This to ensure the disagreement over MVs don't influence the other relationships.
 
-mv.node.ids = votes.nodes[ votes.nodes$MeaningfulVote == TRUE, ][[ "Id" ]]
+mv.node.ids = votes.nodes[ votes.nodes$Meaningful == TRUE, ][[ "Id" ]]
 write.graph.files(
   votes.nodes[ votes.nodes$Markets == TRUE, ]
   , votes.edges[ !(votes.edges$Source %in% mv.node.ids) | !(votes.edges$Target %in% mv.node.ids), ]
