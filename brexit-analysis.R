@@ -175,3 +175,14 @@ write.graph.files(
   , votes.edges
   , suffix = "markets-"
 )
+
+# Write just the votes about market arrangements, without connecting MV nodes to each other.
+# This to ensure the disagreement over MVs don't influence the other relationships.
+
+mv.node.ids = votes.nodes[ votes.nodes$MeaningfulVote == TRUE, ][[ "Id" ]]
+write.graph.files(
+  votes.nodes[ votes.nodes$Markets == TRUE, ]
+  , votes.edges[ !(votes.edges$Source %in% mv.node.ids) | !(votes.edges$Target %in% mv.node.ids), ]
+  , suffix = "markets-with-unconnected-mvs-"
+)
+
