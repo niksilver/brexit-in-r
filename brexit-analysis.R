@@ -115,6 +115,8 @@ votes.edges = data.frame(
 
 # Write everything
 
+cat("Writing files...\n")
+
 write.graph.files(votes.nodes, votes.edges)
 
 # Write just the meaningful votes

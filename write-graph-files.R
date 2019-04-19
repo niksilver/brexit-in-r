@@ -16,8 +16,6 @@ write.graph.files <- function (
     votes.edges[ votes.edges$Source %in% node.ids & votes.edges$Target %in% node.ids, ]
   edges.file.name = paste("graph-data/", suffix, "edges.csv", sep = "")
   
-  cat("Writing files...\n")
-  
   write.csv(votes.nodes, file = nodes.file.name, row.names = FALSE)
   write.csv(votes.edges, file = edges.file.name, row.names = FALSE)
   
