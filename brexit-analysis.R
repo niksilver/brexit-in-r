@@ -162,6 +162,10 @@ write.graph.files(
 )
 
 
+# Now link members to how they voted
+
+cat("Calculating graph for members' votes...\n")
+
 # Get all the members, with the party of each. Since members move parties,
 # always take the last instance of each
 
@@ -172,18 +176,46 @@ members.dup = unique( data.frame(
   , party = raw.data$vote...member.party
 ))
 
-# Now compile a fresh list of members with just their latest party
+# Now compile a fresh data frame of members with just their latest party.
+# Each row name is the member name
+
 members = data.frame()
 
-for(mem in 1:nrow(members.dup)) {
-  name = members.dup[mem, "name"]
-  party = members.dup[mem, "party"]
-  # Is the member already in our list?
-  if ( nrow(members[members$name == name,]) >= 1 ) {
-    # Update the party membership with the latest value
-    members[members$name == name, "party"] = party
-  } else {
-    # Add this new member
-    members = rbind( members, data.frame( name = name, party = party ))
-  }
+for(i in 1:nrow(members.dup)) {
+  name = members.dup[i, "name"]
+  party = members.dup[i, "party"]
+  members[as.character(name), "party"] = party
 }
+
+# Create the nodes of members and voted motions, and edges between members and their votes motions
+
+member.vote.nodes = data.frame(
+  Id = rownames(members)
+  , Label = rownames(members)
+  , Type = "member"
+  , Party = members$party
+  , Category = members$party
+  )
+
+member.vote.nodes = rbind(
+  member.vote.nodes
+  , data.frame(
+    Id = voted.motions$title
+    , Label = voted.motions$title
+    , Type = "voted.motion"
+    , Party = NA
+    , Category = "Voted motion"
+    )
+  )
+
+member.vote.edges = data.frame(
+  Source = raw.data$vote...member.printed
+  , Target = raw.data$vote.title
+)
+
+# Write out the node and edges files for members to voted motions
+
+cat("Writing files for members' votes...\n")
+
+write.csv(member.vote.nodes, file = "graph-data/member-vote-nodes.csv", row.names = FALSE)
+write.csv(member.vote.edges, file = "graph-data/member-vote-edges.csv", row.names = FALSE)
