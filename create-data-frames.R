@@ -30,7 +30,7 @@ create.raw.data = function( pretty.urls ) {
   trim <- function (x) gsub("^\\s+|\\s+$", "", x)
   raw.data$title <- trim( raw.data$title )
   
-  cat("Making calculations...\n")
+  cat("Making calculations on raw data...\n")
   
   # It's useful to augment raw.data with extra columns:
   # - vote name which is just the string Aye or No (reduced from the URI)

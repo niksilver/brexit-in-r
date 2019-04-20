@@ -84,7 +84,7 @@ voted.motions = unique( data.frame(
 cross.votes = get.cross.votes( raw.data, voted.motions)
 
 
-# Output the nodes and edges for Gephi
+# Output the nodes and edges for Gephi, for cross votes
 
 votes.nodes = data.frame(
   Id = voted.motions$id
@@ -115,7 +115,7 @@ votes.edges = data.frame(
 
 # Write everything
 
-cat("Writing files...\n")
+cat("Writing files for cross votes...\n")
 
 write.graph.files(votes.nodes, votes.edges)
 
@@ -160,3 +160,30 @@ write.graph.files(
   , votes.edges[ !(votes.edges$Source %in% mv.node.ids) | !(votes.edges$Target %in% mv.node.ids), ]
   , suffix = "markets-with-unconnected-mvs-"
 )
+
+
+# Get all the members, with the party of each. Since members move parties,
+# always take the last instance of each
+
+# Get a quick list of members and parties, with possible duplicates if a member has switched
+
+members.dup = unique( data.frame(
+  name = raw.data$vote...member.printed
+  , party = raw.data$vote...member.party
+))
+
+# Now compile a fresh list of members with just their latest party
+members = data.frame()
+
+for(mem in 1:nrow(members.dup)) {
+  name = members.dup[mem, "name"]
+  party = members.dup[mem, "party"]
+  # Is the member already in our list?
+  if ( nrow(members[members$name == name,]) >= 1 ) {
+    # Update the party membership with the latest value
+    members[members$name == name, "party"] = party
+  } else {
+    # Add this new member
+    members = rbind( members, data.frame( name = name, party = party ))
+  }
+}
