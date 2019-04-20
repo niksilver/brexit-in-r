@@ -5,12 +5,16 @@ write.member.votes = function( raw.data ) {
   # Get all the members, with the party of each. Since members move parties,
   # always take the last instance of each
   
-  # Get a quick list of members and parties, with possible duplicates if a member has switched
+  # Get a quick list of members and parties, with possible duplicates if a member has switched.
+  # We order by division number to ensure the later votes (and parties) appear later.
   
   members.dup = unique( data.frame(
     name = raw.data$vote...member.printed
     , party = raw.data$vote...member.party
+    , division = raw.data$division.number
   ))
+  
+  members.dup = members.dup[ order(members.dup$division), ]
   
   # Now compile a fresh data frame of members with just their latest party.
   # Each row name is the member name
