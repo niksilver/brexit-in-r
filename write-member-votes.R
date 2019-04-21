@@ -33,8 +33,10 @@ write.member.votes = function( raw.data ) {
     Id = rownames(members)
     , Label = rownames(members)
     , Type = "member"
+    , TypeNumber = 1  # Member nodes numbered to be smaller
     , Party = members$party
-    , Category = members$party
+    , Topic = "Member"
+    , VoteName = "Member"
   )
   
   member.vote.nodes = rbind(
@@ -42,15 +44,18 @@ write.member.votes = function( raw.data ) {
     , data.frame(
       Id = voted.motions$title
       , Label = voted.motions$title
-      , Type = "voted.motion"
-      , Party = NA
-      , Category = "Voted motion"
+      , Type = "Voted Motion"
+      , TypeNumber = 1.5  # Voted motion nodes numbered to be larger
+      , Party = "Motion"
+      , Topic = voted.motions$topic
+      , VoteName = voted.motions$name
     )
   )
   
   member.vote.edges = data.frame(
     Source = raw.data$vote...member.printed
     , Target = raw.data$vote.title
+    , Type = "Undirected"
   )
   
   # Write out the node and edges files for members to voted motions
