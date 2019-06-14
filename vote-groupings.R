@@ -26,4 +26,6 @@ voting.patterns <-
   spread(key = short.title, value = vote.name) %>%
   unite("pattern", -vote...member.printed, remove = FALSE)
 
+# Potential further solution at
+# https://stackoverflow.com/questions/52650932/how-to-calculate-the-similarity-for-all-the-rows-in-a-table-in-r
 

@@ -59,6 +59,7 @@ pretty.urls =
      , "http://explore.data.parliament.uk/?endpoint=commonsdivisions/id/1109556"  # 3 Apr, ext limited to 22/5
 
      , "http://explore.data.parliament.uk/?endpoint=commonsdivisions/id/1110514"  # Ext to 30 June
+     , "http://explore.data.parliament.uk/?endpoint=commonsdivisions/id/1131553"  # 12 Jun, PM can't drive ND
   )
 
 # Create raw data

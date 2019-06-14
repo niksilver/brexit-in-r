@@ -101,7 +101,8 @@ create.raw.data = function( pretty.urls ) {
   
   if ( nrow( raw.data[ is.na(raw.data$short.title), ]) > 0 ) {
     problem.motions = unique( raw.data[ is.na(raw.data$short.title), "title" ] )
-    stop(sprintf( "No theme data for this motion: '%s'\n", problem.motions ))
+    problem.dates = unique( raw.data[ is.na(raw.data$short.title), "date" ] )
+    stop(sprintf( "No theme data for motion '%s' on date '%s'\n", problem.motions, problem.dates ))
   }
   
   
