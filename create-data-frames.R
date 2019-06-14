@@ -30,6 +30,20 @@ create.raw.data = function( pretty.urls ) {
   trim <- function (x) gsub("^\\s+|\\s+$", "", x)
   raw.data$title <- trim( raw.data$title )
   
+  # George Howarth's name is recorded in different forms. Correct that.
+  
+  correct.name <- function(name) {
+    if (name == "Mr George Howarth") {
+      return(as.factor("George Howarth"))
+    } else if (name == "Sir George Howarth") {
+      return(as.factor("George Howarth"))
+    } else {
+      return(as.factor(name))
+    }
+  }
+  v.correct.name = Vectorize(correct.name)
+  raw.data$vote...member.printed = v.correct.name(raw.data$vote...member.printed)
+  
   cat("Making calculations on raw data...\n")
   
   # It's useful to augment raw.data with extra columns:
